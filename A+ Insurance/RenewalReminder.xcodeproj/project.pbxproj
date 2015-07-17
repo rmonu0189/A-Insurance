@@ -43,10 +43,6 @@
 		B56ED2581AC9023C008DF4D8 /* imgHeaderLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B56ED2541AC9023C008DF4D8 /* imgHeaderLogin@2x.png */; };
 		B57582CB1ABD968200F6B3AB /* imgNoRecord.png in Resources */ = {isa = PBXBuildFile; fileRef = B57582CA1ABD968200F6B3AB /* imgNoRecord.png */; };
 		B57582CC1ABD968200F6B3AB /* imgNoRecord.png in Resources */ = {isa = PBXBuildFile; fileRef = B57582CA1ABD968200F6B3AB /* imgNoRecord.png */; };
-		B5B090F91AC9613800AD4F9C /* btnDeleteRenewal.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B090F71AC9613800AD4F9C /* btnDeleteRenewal.png */; };
-		B5B090FA1AC9613800AD4F9C /* btnDeleteRenewal.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B090F71AC9613800AD4F9C /* btnDeleteRenewal.png */; };
-		B5B090FB1AC9613800AD4F9C /* btnDeleteRenewal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B090F81AC9613800AD4F9C /* btnDeleteRenewal@2x.png */; };
-		B5B090FC1AC9613800AD4F9C /* btnDeleteRenewal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B090F81AC9613800AD4F9C /* btnDeleteRenewal@2x.png */; };
 		B5B090FF1AC9625600AD4F9C /* imgHeaderEdit.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B090FD1AC9625600AD4F9C /* imgHeaderEdit.png */; };
 		B5B091001AC9625600AD4F9C /* imgHeaderEdit.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B090FD1AC9625600AD4F9C /* imgHeaderEdit.png */; };
 		B5B091011AC9625600AD4F9C /* imgHeaderEdit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B090FE1AC9625600AD4F9C /* imgHeaderEdit@2x.png */; };
@@ -480,8 +476,6 @@
 		B56ED2531AC9023C008DF4D8 /* imgHeaderLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgHeaderLogin.png; sourceTree = "<group>"; };
 		B56ED2541AC9023C008DF4D8 /* imgHeaderLogin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgHeaderLogin@2x.png"; sourceTree = "<group>"; };
 		B57582CA1ABD968200F6B3AB /* imgNoRecord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgNoRecord.png; sourceTree = "<group>"; };
-		B5B090F71AC9613800AD4F9C /* btnDeleteRenewal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnDeleteRenewal.png; sourceTree = "<group>"; };
-		B5B090F81AC9613800AD4F9C /* btnDeleteRenewal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnDeleteRenewal@2x.png"; sourceTree = "<group>"; };
 		B5B090FD1AC9625600AD4F9C /* imgHeaderEdit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgHeaderEdit.png; sourceTree = "<group>"; };
 		B5B090FE1AC9625600AD4F9C /* imgHeaderEdit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgHeaderEdit@2x.png"; sourceTree = "<group>"; };
 		B5B091091AC9651200AD4F9C /* imgAppTour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgAppTour.png; sourceTree = "<group>"; };
@@ -1107,8 +1101,6 @@
 				B5B0910A1AC9651200AD4F9C /* imgAppTour@2x.png */,
 				B5B090FD1AC9625600AD4F9C /* imgHeaderEdit.png */,
 				B5B090FE1AC9625600AD4F9C /* imgHeaderEdit@2x.png */,
-				B5B090F71AC9613800AD4F9C /* btnDeleteRenewal.png */,
-				B5B090F81AC9613800AD4F9C /* btnDeleteRenewal@2x.png */,
 				B56ED2531AC9023C008DF4D8 /* imgHeaderLogin.png */,
 				B56ED2541AC9023C008DF4D8 /* imgHeaderLogin@2x.png */,
 				FAA2E8A71AC86A47002EDBD0 /* btnEditRenewal.png */,
@@ -1426,7 +1418,6 @@
 				FA12DCF01A76797C0038CBDF /* SignInFacebook@2x.png in Resources */,
 				FA12DD9E1A769DAF0038CBDF /* BigTab@2x.png in Resources */,
 				FA12DD391A768E020038CBDF /* InnerTab.png in Resources */,
-				B5B090FB1AC9613800AD4F9C /* btnDeleteRenewal@2x.png in Resources */,
 				FAC8E59D1A81333D004425A5 /* Register~ipad.png in Resources */,
 				FA12DD811A7698610038CBDF /* SliderButton@2x.png in Resources */,
 				FA12DDA61A769DAF0038CBDF /* MotoringLogo@2x.png in Resources */,
@@ -1499,7 +1490,6 @@
 				FAE25BC51AB41FD000DE26EE /* InsuranceBack@2x.png in Resources */,
 				FA885F631AAD485A0055A7B8 /* imgProfile.png in Resources */,
 				FAE383B81AB11B9200B415FA /* imgMotoring@2x.png in Resources */,
-				B5B090F91AC9613800AD4F9C /* btnDeleteRenewal.png in Resources */,
 				FA12DCF41A76797C0038CBDF /* SignInTwitter@2x.png in Resources */,
 				FAC8E5851A81333D004425A5 /* Bg~ipad.png in Resources */,
 				FA12DD3F1A768E020038CBDF /* Note@2x.png in Resources */,
@@ -1624,7 +1614,6 @@
 				FAC8E5D11A814B7B004425A5 /* registerGreen~ipad.png in Resources */,
 				FA19B4EA1AB75806003D043C /* imgYourProfile@2x.png in Resources */,
 				FAC8E5A01A81333D004425A5 /* SignIn@2x~ipad.png in Resources */,
-				B5B090FA1AC9613800AD4F9C /* btnDeleteRenewal.png in Resources */,
 				FAFB30091A7DD48E009892AA /* utilityLogo.png in Resources */,
 				FA12DCE91A76797C0038CBDF /* Register@2x.png in Resources */,
 				B535E6851AB71EAC00C15AAD /* imgNextOther@2x.png in Resources */,
@@ -1696,7 +1685,6 @@
 				B5D445C11AB7FCD20058A7E6 /* imgTop@2x.png in Resources */,
 				FA12DD401A768E020038CBDF /* Note@2x.png in Resources */,
 				B5B0910C1AC9651200AD4F9C /* imgAppTour.png in Resources */,
-				B5B090FC1AC9613800AD4F9C /* btnDeleteRenewal@2x.png in Resources */,
 				FA175D8E1A7E2EC6007B0388 /* logoutIcon.png in Resources */,
 				FA12DDB31A769DAF0038CBDF /* WhiteSmallTab@2x.png in Resources */,
 				FA19B4C61AB74A0B003D043C /* imgEditButton@2x.png in Resources */,
