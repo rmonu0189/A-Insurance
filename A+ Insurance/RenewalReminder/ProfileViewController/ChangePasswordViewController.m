@@ -32,6 +32,10 @@
     
     self.connection = [[RequestConnection alloc] init];
     self.connection.delegate = self;
+    
+    [self.txtOldPassword setValue:[UIColor darkGrayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [self.txtNewPassword setValue:[UIColor darkGrayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [self.confirmPassword setValue:[UIColor darkGrayColor] forKeyPath:@"_placeholderLabel.textColor"];
     // Do any additional setup after loading the view.
 }
 

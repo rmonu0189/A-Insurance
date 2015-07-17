@@ -51,10 +51,6 @@
 		B5B091001AC9625600AD4F9C /* imgHeaderEdit.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B090FD1AC9625600AD4F9C /* imgHeaderEdit.png */; };
 		B5B091011AC9625600AD4F9C /* imgHeaderEdit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B090FE1AC9625600AD4F9C /* imgHeaderEdit@2x.png */; };
 		B5B091021AC9625600AD4F9C /* imgHeaderEdit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B090FE1AC9625600AD4F9C /* imgHeaderEdit@2x.png */; };
-		B5B091051AC9637900AD4F9C /* btnChangePassword.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B091031AC9637900AD4F9C /* btnChangePassword.png */; };
-		B5B091061AC9637900AD4F9C /* btnChangePassword.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B091031AC9637900AD4F9C /* btnChangePassword.png */; };
-		B5B091071AC9637900AD4F9C /* btnChangePassword@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B091041AC9637900AD4F9C /* btnChangePassword@2x.png */; };
-		B5B091081AC9637900AD4F9C /* btnChangePassword@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B091041AC9637900AD4F9C /* btnChangePassword@2x.png */; };
 		B5B0910B1AC9651200AD4F9C /* imgAppTour.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B091091AC9651200AD4F9C /* imgAppTour.png */; };
 		B5B0910C1AC9651200AD4F9C /* imgAppTour.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B091091AC9651200AD4F9C /* imgAppTour.png */; };
 		B5B0910D1AC9651200AD4F9C /* imgAppTour@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B0910A1AC9651200AD4F9C /* imgAppTour@2x.png */; };
@@ -322,10 +318,6 @@
 		FAA2E8AA1AC86A47002EDBD0 /* btnEditRenewal.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA2E8A71AC86A47002EDBD0 /* btnEditRenewal.png */; };
 		FAA2E8AB1AC86A47002EDBD0 /* btnEditRenewal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA2E8A81AC86A47002EDBD0 /* btnEditRenewal@2x.png */; };
 		FAA2E8AC1AC86A47002EDBD0 /* btnEditRenewal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA2E8A81AC86A47002EDBD0 /* btnEditRenewal@2x.png */; };
-		FAA2E8AF1AC86C6C002EDBD0 /* btnSaveChanges.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA2E8AD1AC86C6C002EDBD0 /* btnSaveChanges.png */; };
-		FAA2E8B01AC86C6C002EDBD0 /* btnSaveChanges.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA2E8AD1AC86C6C002EDBD0 /* btnSaveChanges.png */; };
-		FAA2E8B11AC86C6C002EDBD0 /* btnSaveChanges@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA2E8AE1AC86C6C002EDBD0 /* btnSaveChanges@2x.png */; };
-		FAA2E8B21AC86C6C002EDBD0 /* btnSaveChanges@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA2E8AE1AC86C6C002EDBD0 /* btnSaveChanges@2x.png */; };
 		FAC8E5831A81333D004425A5 /* Bg@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC8E56F1A81333D004425A5 /* Bg@2x~ipad.png */; };
 		FAC8E5841A81333D004425A5 /* Bg@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC8E56F1A81333D004425A5 /* Bg@2x~ipad.png */; };
 		FAC8E5851A81333D004425A5 /* Bg~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC8E5701A81333D004425A5 /* Bg~ipad.png */; };
@@ -492,8 +484,6 @@
 		B5B090F81AC9613800AD4F9C /* btnDeleteRenewal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnDeleteRenewal@2x.png"; sourceTree = "<group>"; };
 		B5B090FD1AC9625600AD4F9C /* imgHeaderEdit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgHeaderEdit.png; sourceTree = "<group>"; };
 		B5B090FE1AC9625600AD4F9C /* imgHeaderEdit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgHeaderEdit@2x.png"; sourceTree = "<group>"; };
-		B5B091031AC9637900AD4F9C /* btnChangePassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnChangePassword.png; sourceTree = "<group>"; };
-		B5B091041AC9637900AD4F9C /* btnChangePassword@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnChangePassword@2x.png"; sourceTree = "<group>"; };
 		B5B091091AC9651200AD4F9C /* imgAppTour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgAppTour.png; sourceTree = "<group>"; };
 		B5B0910A1AC9651200AD4F9C /* imgAppTour@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgAppTour@2x.png"; sourceTree = "<group>"; };
 		B5B091101AC9661B00AD4F9C /* TourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TourViewController.h; sourceTree = "<group>"; };
@@ -648,8 +638,6 @@
 		FA9BDF951AC85C7F00BFD0E4 /* imgHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgHeader@2x.png"; sourceTree = "<group>"; };
 		FAA2E8A71AC86A47002EDBD0 /* btnEditRenewal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnEditRenewal.png; sourceTree = "<group>"; };
 		FAA2E8A81AC86A47002EDBD0 /* btnEditRenewal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnEditRenewal@2x.png"; sourceTree = "<group>"; };
-		FAA2E8AD1AC86C6C002EDBD0 /* btnSaveChanges.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnSaveChanges.png; sourceTree = "<group>"; };
-		FAA2E8AE1AC86C6C002EDBD0 /* btnSaveChanges@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnSaveChanges@2x.png"; sourceTree = "<group>"; };
 		FAC8E56F1A81333D004425A5 /* Bg@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bg@2x~ipad.png"; sourceTree = "<group>"; };
 		FAC8E5701A81333D004425A5 /* Bg~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bg~ipad.png"; sourceTree = "<group>"; };
 		FAC8E5711A81333D004425A5 /* Checkbox@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkbox@2x~ipad.png"; sourceTree = "<group>"; };
@@ -1117,16 +1105,12 @@
 				B5B091141AC9683800AD4F9C /* imgLogoAI.png */,
 				B5B091091AC9651200AD4F9C /* imgAppTour.png */,
 				B5B0910A1AC9651200AD4F9C /* imgAppTour@2x.png */,
-				B5B091031AC9637900AD4F9C /* btnChangePassword.png */,
-				B5B091041AC9637900AD4F9C /* btnChangePassword@2x.png */,
 				B5B090FD1AC9625600AD4F9C /* imgHeaderEdit.png */,
 				B5B090FE1AC9625600AD4F9C /* imgHeaderEdit@2x.png */,
 				B5B090F71AC9613800AD4F9C /* btnDeleteRenewal.png */,
 				B5B090F81AC9613800AD4F9C /* btnDeleteRenewal@2x.png */,
 				B56ED2531AC9023C008DF4D8 /* imgHeaderLogin.png */,
 				B56ED2541AC9023C008DF4D8 /* imgHeaderLogin@2x.png */,
-				FAA2E8AD1AC86C6C002EDBD0 /* btnSaveChanges.png */,
-				FAA2E8AE1AC86C6C002EDBD0 /* btnSaveChanges@2x.png */,
 				FAA2E8A71AC86A47002EDBD0 /* btnEditRenewal.png */,
 				FAA2E8A81AC86A47002EDBD0 /* btnEditRenewal@2x.png */,
 				FA9BDF941AC85C7F00BFD0E4 /* imgHeader.png */,
@@ -1372,7 +1356,6 @@
 				FA12DCEC1A76797C0038CBDF /* SignIn@2x.png in Resources */,
 				FA885F651AAD485A0055A7B8 /* imgProfile@2x.png in Resources */,
 				FA0CC0C21AC9BB9B00AC70EA /* btnLogin@2x.png in Resources */,
-				B5B091071AC9637900AD4F9C /* btnChangePassword@2x.png in Resources */,
 				FAC8E5B01A814035004425A5 /* SendMyPassword@2x~ipad.png in Resources */,
 				FA12DCFC1A767CFC0038CBDF /* imgLoginField.png in Resources */,
 				FA885F6F1AAD4C030055A7B8 /* imgLogout.png in Resources */,
@@ -1425,7 +1408,6 @@
 				FAE25BCB1AB41FD000DE26EE /* MotoringBack.png in Resources */,
 				FAD415391A7D470D0082A65B /* plusButtonNew.png in Resources */,
 				B5C6D7C61AB85BC900FE45DC /* imgHomeIcon@2x.png in Resources */,
-				B5B091051AC9637900AD4F9C /* btnChangePassword.png in Resources */,
 				FAC8E5931A81333D004425A5 /* Massege@2x~ipad.png in Resources */,
 				FAC8E5871A81333D004425A5 /* Checkbox@2x~ipad.png in Resources */,
 				B535E6881AB720C800C15AAD /* LifestyleBack.png in Resources */,
@@ -1441,7 +1423,6 @@
 				B54A10931AC2F51E00D84BA9 /* imgUnChecedkBox.png in Resources */,
 				B55BBF231AB9393500D699C8 /* utilityBack@2x.png in Resources */,
 				FA12DDAC1A769DAF0038CBDF /* SmallWhiteTab.png in Resources */,
-				FAA2E8AF1AC86C6C002EDBD0 /* btnSaveChanges.png in Resources */,
 				FA12DCF01A76797C0038CBDF /* SignInFacebook@2x.png in Resources */,
 				FA12DD9E1A769DAF0038CBDF /* BigTab@2x.png in Resources */,
 				FA12DD391A768E020038CBDF /* InnerTab.png in Resources */,
@@ -1465,7 +1446,6 @@
 				B5B091011AC9625600AD4F9C /* imgHeaderEdit@2x.png in Resources */,
 				FA12DCEE1A76797C0038CBDF /* SignInFacebook.png in Resources */,
 				FAEEB6AF1A79629700E68EFF /* plusButton@2x.png in Resources */,
-				FAA2E8B11AC86C6C002EDBD0 /* btnSaveChanges@2x.png in Resources */,
 				FA12DD451A768E020038CBDF /* Telephone.png in Resources */,
 				FA12DDB21A769DAF0038CBDF /* WhiteSmallTab@2x.png in Resources */,
 				FAC8E5A51A81333D004425A5 /* SignInTwitter@2x~ipad.png in Resources */,
@@ -1564,7 +1544,6 @@
 				FA19B4C01AB745F0003D043C /* imgYourRenewal@2x.png in Resources */,
 				FAC8E5881A81333D004425A5 /* Checkbox@2x~ipad.png in Resources */,
 				FA12DDA31A769DAF0038CBDF /* BigWhiteTab@2x.png in Resources */,
-				B5B091061AC9637900AD4F9C /* btnChangePassword.png in Resources */,
 				B5C6D7C91AB85BC900FE45DC /* imgSettingIcon.png in Resources */,
 				FA885F661AAD485A0055A7B8 /* imgProfile@2x.png in Resources */,
 				FAC8E5861A81333D004425A5 /* Bg~ipad.png in Resources */,
@@ -1590,7 +1569,6 @@
 				FA12DD481A768E020038CBDF /* Telephone@2x.png in Resources */,
 				FA12DD1C1A76834D0038CBDF /* SendMyPassword.png in Resources */,
 				FA12DD881A769C070038CBDF /* Help@2x.png in Resources */,
-				FAA2E8B01AC86C6C002EDBD0 /* btnSaveChanges.png in Resources */,
 				FA0CC0C11AC9BB9B00AC70EA /* btnLogin.png in Resources */,
 				FA12DD1E1A76834D0038CBDF /* SendMyPassword@2x.png in Resources */,
 				FA12DCF11A76797C0038CBDF /* SignInFacebook@2x.png in Resources */,
@@ -1599,7 +1577,6 @@
 				FA9BDF811AC8522B00BFD0E4 /* rightArrow@2x.png in Resources */,
 				FA12DCD31A76797C0038CBDF /* Checkbox.png in Resources */,
 				FAE25BC21AB41FD000DE26EE /* HomeBack@2x.png in Resources */,
-				B5B091081AC9637900AD4F9C /* btnChangePassword@2x.png in Resources */,
 				FA175D801A7E2E3C007B0388 /* homeIcon.png in Resources */,
 				FAE25BC41AB41FD000DE26EE /* InsuranceBack.png in Resources */,
 				FA12DCF91A76797C0038CBDF /* WhiteBigTab@2x.png in Resources */,
@@ -1735,7 +1712,6 @@
 				FA12DCF71A76797C0038CBDF /* WhiteBigTab.png in Resources */,
 				FA175D841A7E2E3C007B0388 /* profileIcon.png in Resources */,
 				FA12DD461A768E020038CBDF /* Telephone.png in Resources */,
-				FAA2E8B21AC86C6C002EDBD0 /* btnSaveChanges@2x.png in Resources */,
 				FA12DD3A1A768E020038CBDF /* InnerTab.png in Resources */,
 				FA12DCD51A76797C0038CBDF /* Checkbox@2x.png in Resources */,
 				FA0CC0CB1AC9BB9B00AC70EA /* btnTwitter@2x.png in Resources */,
@@ -1869,8 +1845,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Akshay Hunka (88NAY335D5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Akshay Hunka (88NAY335D5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1888,7 +1864,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "db165228-5ba4-40c2-b0e4-17b5c346ae15";
+				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1909,8 +1885,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Akshay Hunka (88NAY335D5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Akshay Hunka (88NAY335D5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1921,7 +1897,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "db165228-5ba4-40c2-b0e4-17b5c346ae15";
+				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1932,7 +1908,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Akshay Hunka (88NAY335D5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1942,7 +1918,7 @@
 				INFOPLIST_FILE = "RenewalReminder/RenewalReminder-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "db165228-5ba4-40c2-b0e4-17b5c346ae15";
+				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1953,8 +1929,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Akshay Hunka (88NAY335D5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Akshay Hunka (88NAY335D5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1964,7 +1940,7 @@
 				INFOPLIST_FILE = "RenewalReminder/RenewalReminder-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "db165228-5ba4-40c2-b0e4-17b5c346ae15";
+				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1974,8 +1950,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RenewalReminder.app/RenewalReminder";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Akshay Hunka (88NAY335D5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Akshay Hunka (88NAY335D5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1990,7 +1966,7 @@
 				);
 				INFOPLIST_FILE = "RenewalReminderTests/RenewalReminderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "db165228-5ba4-40c2-b0e4-17b5c346ae15";
+				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -2000,8 +1976,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RenewalReminder.app/RenewalReminder";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Akshay Hunka (88NAY335D5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Akshay Hunka (88NAY335D5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -2012,7 +1988,7 @@
 				GCC_PREFIX_HEADER = "RenewalReminder/RenewalReminder-Prefix.pch";
 				INFOPLIST_FILE = "RenewalReminderTests/RenewalReminderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "db165228-5ba4-40c2-b0e4-17b5c346ae15";
+				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
