@@ -48,43 +48,13 @@
     [self.connection getTypeAndCategory];
     
     arrTypes = [[NSMutableArray alloc] init];
-//    [arrTypes addObject:@{@"type":@"Boiler Cover",@"category":@"Home"}];
-//    [arrTypes addObject:@{@"type":@"Broadband",@"category":@"Utilities"}];
-//    [arrTypes addObject:@{@"type":@"Business Insurance",@"category":@"Insurance"}];
-//    [arrTypes addObject:@{@"type":@"Car Breakdown Cover",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Car Insurance",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Car Leasing Contract",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Car MOT",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Car Road Tax",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Car Servicing",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Caravan Insurance",@"category":@"Travel"}];
-//    [arrTypes addObject:@{@"type":@"Digital TV Service",@"category":@"Utilities"}];
-//    [arrTypes addObject:@{@"type":@"Gadget Insurance",@"category":@"Utilities"}];
-//    [arrTypes addObject:@{@"type":@"Health Insurance",@"category":@"Lifestyle"}];
-//    [arrTypes addObject:@{@"type":@"Home Emergency Cover",@"category":@"Home"}];
-//    [arrTypes addObject:@{@"type":@"Home Insurance",@"category":@"Home"}];
-//    [arrTypes addObject:@{@"type":@"Landlord Insurance",@"category":@"Home"}];
-//    [arrTypes addObject:@{@"type":@"Life Insurance",@"category":@"Lifestyle"}];
-//    [arrTypes addObject:@{@"type":@"Mobile Phone Contract",@"category":@"Lifestyle"}];
-//    [arrTypes addObject:@{@"type":@"Motorbike Insurance",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Motorbike MOT",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Motorbike Road Tax",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Motorbike Servicing",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Pet Insurance",@"category":@"Lifestyle"}];
-//    [arrTypes addObject:@{@"type":@"Travel Insurance",@"category":@"Travel"}];
-//    [arrTypes addObject:@{@"type":@"Van Breakdown Cover",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Van Insurance",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Van Leasing Contract",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Van MOT",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Van Road Tax",@"category":@"Motoring"}];
-//    [arrTypes addObject:@{@"type":@"Van Servicing",@"category":@"Motoring"}];
     
     if (self.root != nil) {
         [self setRootValue];
-        [self.btnAddEdit setImage:[UIImage imageNamed:@"btnSaveChanges.png"] forState:UIControlStateNormal];
+        [self.btnAddEdit setTitle:@"SAVE" forState:UIControlStateNormal];
     }
     else{
-        [self.btnAddEdit setImage:[UIImage imageNamed:@"btnEditRenewal.png"] forState:UIControlStateNormal];
+        [self.btnAddEdit setTitle:@"DONE" forState:UIControlStateNormal];
     }
     
     UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
@@ -109,7 +79,7 @@
     self.txtPrice.text = [self.root valueForKey:@"price"];
     self.txtNotes.text = [self.root valueForKey:@"notes"];
     self.txtType.text = [self.root valueForKey:@"type"];
-    self.txtNotes.textColor = [UIColor whiteColor];
+    self.txtNotes.textColor = [UIColor colorWithRed:65.0/255.0 green:180.0/255.0 blue:255.0/255.0 alpha:1.0];
     [self.btnAddEdit setTitle:@"Done" forState:UIControlStateNormal];
 }
 
@@ -173,7 +143,7 @@
     if ([self validate]) {
         requestType = 2;
         [[AppDelegate sharedAppDelegate] startLoadingView];
-        if ([self.btnAddEdit.titleLabel.text isEqual:@"Done"]) {
+        if ([self.btnAddEdit.titleLabel.text isEqual:@"DONE"]) {
             [self.connection editRenewal:self.renewalID UserID:[AppDelegate sharedAppDelegate].me.userID Type:self.txtType.text StartDate:[[AppDelegate sharedAppDelegate] convertOriginalDate:self.txtStartDate.text] RenewalDate:[[AppDelegate sharedAppDelegate] convertOriginalDate:self.txtRenewaldate.text] provider:self.txtProvider.text Price:self.txtPrice.text Notes:self.txtNotes.text Category:[[arrTypes objectAtIndex:selectTypeIndex] valueForKey:@"category"]];
         }
         else{
@@ -269,7 +239,7 @@
     [self.scrollViewAddRenewal setContentOffset:CGPointMake(0, 200) animated:YES];
     if ([self.txtNotes.text isEqualToString:@"- add your notes here -"]) {
         self.txtNotes.text = @"";
-        self.txtNotes.textColor = [UIColor whiteColor];
+        self.txtNotes.textColor = [UIColor colorWithRed:65.0/255.0 green:180.0/255.0 blue:255.0/255.0 alpha:1.0];
     }
     return YES;
 }
@@ -277,7 +247,7 @@
 - (BOOL)textViewShouldEndEditing:(UITextView *)textView{
     if (textView.text.length<=0) {
         self.txtNotes.text = @"- add your notes here -";
-        self.txtNotes.textColor = [UIColor whiteColor];
+        self.txtNotes.textColor = [UIColor lightGrayColor];
     }
     return YES;
 }
