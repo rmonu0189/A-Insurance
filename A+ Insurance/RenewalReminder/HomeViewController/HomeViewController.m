@@ -99,38 +99,38 @@
     
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 35.0;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    return 35.0;
+//}
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 35)];
-    
-    if (section == 0) {
-        UIImageView * imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 35)];
-        imgView.image = [UIImage imageNamed:@"imgNext30.png"];
-        
-        UIImageView *imgArrow = [[UIImageView alloc] initWithFrame:CGRectMake(298, 10, 14, 14)];
-        imgArrow.image = [UIImage imageNamed:@"downArrow.png"];
-        
-        [view addSubview:imgView];
-        [view addSubview:imgArrow];
-        
-    }
-    else{
-        UIImageView * imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 35)];
-        imgView.image = [UIImage imageNamed:@"imgNextOther.png.png"];
-        
-        UIImageView *imgArrow = [[UIImageView alloc] initWithFrame:CGRectMake(298, 10, 14, 14)];
-        imgArrow.image = [UIImage imageNamed:@"downArrow.png"];
-        
-        [view addSubview:imgView];
-        [view addSubview:imgArrow];
-    }
-    
-    return view;
-}
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+//    
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 35)];
+//    
+//    if (section == 0) {
+//        UIImageView * imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 35)];
+//        imgView.image = [UIImage imageNamed:@"imgNext30.png"];
+//        
+//        UIImageView *imgArrow = [[UIImageView alloc] initWithFrame:CGRectMake(298, 10, 14, 14)];
+//        imgArrow.image = [UIImage imageNamed:@"downArrow.png"];
+//        
+//        [view addSubview:imgView];
+//        [view addSubview:imgArrow];
+//        
+//    }
+//    else{
+//        UIImageView * imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 35)];
+//        imgView.image = [UIImage imageNamed:@"imgNextOther.png.png"];
+//        
+//        UIImageView *imgArrow = [[UIImageView alloc] initWithFrame:CGRectMake(298, 10, 14, 14)];
+//        imgArrow.image = [UIImage imageNamed:@"downArrow.png"];
+//        
+//        [view addSubview:imgView];
+//        [view addSubview:imgArrow];
+//    }
+//    
+//    return view;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
@@ -154,6 +154,7 @@
         else{
             cell.lblRemainDays.text = [NSString stringWithFormat:@"%d days",(int)days];
         }
+        [cell.lblRemainDays setTextColor:[UIColor colorWithRed:162.0/255. green:31.0/255.0 blue:22.0/255.0 alpha:1.0]];
         cell.lblYouAreWith.text = [param valueForKey:@"provider"];
         cell.imgFirst.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]];
         cell.imgBackground.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageBackName:[param valueForKey:@"category"]]];
@@ -175,7 +176,7 @@
         cell.lblYouAreWith.text = [param valueForKey:@"provider"];
         cell.imgFirst.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]];
         cell.imgBackground.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageBackName:[param valueForKey:@"category"]]];
-        
+        [cell.lblRemainDays setTextColor:[UIColor colorWithRed:27.0/255. green:145.0/255.0 blue:1.0/255.0 alpha:1.0]];
         return cell;
     }
 }
@@ -260,18 +261,32 @@
         }
         
         
-        NSInteger minDays = 0;
-        if ([AppDelegate sharedAppDelegate].renewalsList30Days.count > 0) {
-            NSDictionary *param = [[AppDelegate sharedAppDelegate].renewalsList30Days firstObject];
-            self.lblReminderType.text = [param valueForKey:@"type"];
+        NSString *minDays = @"";
+        NSString *minType = @"";
+        
+        for (NSDictionary *param in [AppDelegate sharedAppDelegate].renewalsList30Days) {
             NSInteger days = [[AppDelegate sharedAppDelegate] getDifferenceFromTodayTo:[[[param valueForKey:@"renewal_date"] componentsSeparatedByString:@" "] firstObject]];
-            if (days == 0) {
-                self.lblNumberOfRemainDays.text = @"0";
+            if ([minDays isEqualToString:@""]) {
+                minDays = [NSString stringWithFormat:@"%d",(int)days];
+                minType = [param valueForKey:@"type"];
             }
             else{
-                self.lblNumberOfRemainDays.text = [NSString stringWithFormat:@"%d",(int)days];
+                if (minDays.integerValue > days) {
+                    minDays = [NSString stringWithFormat:@"%d",(int)days];
+                    minType = [param valueForKey:@"type"];
+                }
             }
         }
+        
+        if ([minDays isEqualToString:@""]) {
+            self.lblReminderType.text = @"";
+            self.lblNumberOfRemainDays.text = @"0";
+        }
+        else{
+            self.lblReminderType.text = minType;
+            self.lblNumberOfRemainDays.text = minDays;
+        }
+        
         
     }
     else{

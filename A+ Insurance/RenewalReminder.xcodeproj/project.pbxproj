@@ -1288,6 +1288,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = MonuRathor;
 				TargetAttributes = {
+					FA12DC7C1A7678A60038CBDF = {
+						DevelopmentTeam = 5986S8FT58;
+					};
 					FA12DC9D1A7678A70038CBDF = {
 						TestTargetID = FA12DC7C1A7678A60038CBDF;
 					};
@@ -1884,7 +1887,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1894,7 +1898,7 @@
 				INFOPLIST_FILE = "RenewalReminder/RenewalReminder-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1905,8 +1909,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1916,7 +1920,7 @@
 				INFOPLIST_FILE = "RenewalReminder/RenewalReminder-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1926,8 +1930,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RenewalReminder.app/RenewalReminder";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1942,7 +1946,7 @@
 				);
 				INFOPLIST_FILE = "RenewalReminderTests/RenewalReminderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1952,8 +1956,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RenewalReminder.app/RenewalReminder";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1964,7 +1968,7 @@
 				GCC_PREFIX_HEADER = "RenewalReminder/RenewalReminder-Prefix.pch";
 				INFOPLIST_FILE = "RenewalReminderTests/RenewalReminderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
