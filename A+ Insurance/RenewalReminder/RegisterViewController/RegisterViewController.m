@@ -97,7 +97,7 @@
             return;
         }
         
-        [self.scrollViewRegister setContentSize:CGSizeMake(320, 568)];
+        [self.scrollViewRegister setContentSize:CGSizeMake(320, 480)];
         [self.scrollViewRegister setContentOffset:CGPointMake(0, 0) animated:YES];
         self.requestType = 1;
         [[AppDelegate sharedAppDelegate] startLoadingView];
@@ -147,27 +147,27 @@
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     self.titlePicker.hidden = YES;
-    [self.scrollViewRegister setContentSize:CGSizeMake(320, 800)];
+    [self.scrollViewRegister setContentSize:CGSizeMake(320, 718)];
     if ([self.txtTitle isEqual:textField]) {
         [self.scrollViewRegister setContentOffset:CGPointMake(0, 0) animated:YES];
     }
     else if ([self.txtFirstName isEqual:textField]) {
-        [self.scrollViewRegister setContentOffset:CGPointMake(0, 43) animated:YES];
+        [self.scrollViewRegister setContentOffset:CGPointMake(0, 0) animated:YES];
     }
     else if ([self.txtSurname isEqual:textField]) {
-        [self.scrollViewRegister setContentOffset:CGPointMake(0, 86) animated:YES];
+        [self.scrollViewRegister setContentOffset:CGPointMake(0, 0) animated:YES];
     }
     else if ([self.txtEmail isEqual:textField]) {
-        [self.scrollViewRegister setContentOffset:CGPointMake(0, 129) animated:YES];
+        [self.scrollViewRegister setContentOffset:CGPointMake(0, 41) animated:YES];
     }
     else if ([self.txtConfirmEmail isEqual:textField]) {
-        [self.scrollViewRegister setContentOffset:CGPointMake(0, 172) animated:YES];
+        [self.scrollViewRegister setContentOffset:CGPointMake(0, 84) animated:YES];
     }
     else if ([self.txtMobile isEqual:textField]) {
-        [self.scrollViewRegister setContentOffset:CGPointMake(0, 215) animated:YES];
+        [self.scrollViewRegister setContentOffset:CGPointMake(0, 127) animated:YES];
     }
     else if ([self.txtPassword isEqual:textField]) {
-       [self.scrollViewRegister setContentOffset:CGPointMake(0, 258) animated:YES];
+       [self.scrollViewRegister setContentOffset:CGPointMake(0, 170) animated:YES];
     }
     return YES;
 }
@@ -193,7 +193,7 @@
     }
     else if ([self.txtPassword isEqual:textField]) {
         [self.txtPassword resignFirstResponder];
-        [self.scrollViewRegister setContentSize:CGSizeMake(320, 568)];
+        [self.scrollViewRegister setContentSize:CGSizeMake(320, 480)];
         [self.scrollViewRegister setContentOffset:CGPointMake(0, 0) animated:YES];
     }
     return YES;
