@@ -25,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UIView *typePicker;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollViewRenewal;
+@property (weak, nonatomic) IBOutlet UILabel *lblNumberOfRemainDays;
+@property (weak, nonatomic) IBOutlet UILabel *lblReminderType;
 
 
 - (IBAction)clickedEditRenewal:(id)sender;

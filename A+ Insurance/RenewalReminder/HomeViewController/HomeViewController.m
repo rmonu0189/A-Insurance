@@ -220,7 +220,6 @@
     if (!error) {
         [AppDelegate sharedAppDelegate].renewalsList30Days = (NSMutableArray *)[response valueForKey:@"renewal30days"];
         [AppDelegate sharedAppDelegate].renewalsListOther = (NSMutableArray *)[response valueForKey:@"renewalOther"];
-        //NSLog(@"%@",[AppDelegate sharedAppDelegate].renewalsList30Days);
         [self reloadTable];
         
         NSInteger count = [[UIApplication sharedApplication] scheduledLocalNotifications].count;
@@ -258,6 +257,20 @@
         else{
             self.btnNorecordFound.hidden = NO;
             self.imgNoRecordFound.hidden = NO;
+        }
+        
+        
+        NSInteger minDays = 0;
+        if ([AppDelegate sharedAppDelegate].renewalsList30Days.count > 0) {
+            NSDictionary *param = [[AppDelegate sharedAppDelegate].renewalsList30Days firstObject];
+            self.lblReminderType.text = [param valueForKey:@"type"];
+            NSInteger days = [[AppDelegate sharedAppDelegate] getDifferenceFromTodayTo:[[[param valueForKey:@"renewal_date"] componentsSeparatedByString:@" "] firstObject]];
+            if (days == 0) {
+                self.lblNumberOfRemainDays.text = @"0";
+            }
+            else{
+                self.lblNumberOfRemainDays.text = [NSString stringWithFormat:@"%d",(int)days];
+            }
         }
         
     }

@@ -489,7 +489,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irP-gI-O7v">
-                                                <rect key="frame" x="109" y="368" width="142" height="30"/>
+                                                <rect key="frame" x="91" y="395" width="142" height="30"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
                                                 <state key="normal" title="Return to login screen">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -599,7 +599,7 @@
                                         <color key="textColor" red="0.32156862749999998" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="43" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdD-o0-l1G">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdD-o0-l1G">
                                         <rect key="frame" x="8" y="46" width="304" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="7wD-5e-bIn"/>
@@ -608,7 +608,7 @@
                                         <color key="textColor" red="0.32156862749999998" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Insurance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vd5-Ui-4B1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vd5-Ui-4B1">
                                         <rect key="frame" x="8" y="113" width="304" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Ygk-2Y-IK0"/>
@@ -880,6 +880,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="lMG-cx-fHD"/>
                     <connections>
+                        <outlet property="lblNumberOfRemainDays" destination="FdD-o0-l1G" id="dXU-qY-1L3"/>
+                        <outlet property="lblReminderType" destination="vd5-Ui-4B1" id="AqZ-rb-Tqo"/>
                         <outlet property="scrollViewRenewal" destination="kn9-Wv-qqc" id="s13-Kf-O7r"/>
                         <outlet property="txtNotes" destination="j2m-Z3-STI" id="o9i-Dr-oNk"/>
                         <outlet property="txtRenewalDate" destination="gGb-eG-QWR" id="yG0-C0-ong"/>
@@ -1013,13 +1015,13 @@
                                         <color key="textColor" red="0.32156862745098036" green="0.32156862745098036" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="43" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwc-bh-lfU">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwc-bh-lfU">
                                         <rect key="frame" x="8" y="46" width="304" height="65"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="70"/>
                                         <color key="textColor" red="0.32156862749999998" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car Insurance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfP-9L-0aj">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfP-9L-0aj">
                                         <rect key="frame" x="8" y="113" width="304" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                         <color key="textColor" red="0.32156862749999998" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -1094,6 +1096,8 @@
                         <outlet property="btnMenu" destination="WUR-bh-Xkq" id="fpG-EP-aZu"/>
                         <outlet property="btnNorecordFound" destination="nJE-1L-Ply" id="YwH-8L-bIl"/>
                         <outlet property="imgNoRecordFound" destination="a30-pH-5v1" id="Jdo-xz-fSo"/>
+                        <outlet property="lblNumberOfRemainDays" destination="Mwc-bh-lfU" id="TQa-76-jbQ"/>
+                        <outlet property="lblReminderType" destination="FfP-9L-0aj" id="Brd-T3-mc6"/>
                         <outlet property="tblRenewal30" destination="FlC-pp-5AK" id="kpl-1J-AsZ"/>
                         <segue destination="YZ1-Dc-O8s" kind="push" identifier="viewRenewal" id="Mbd-ve-rdj"/>
                     </connections>
@@ -2329,6 +2333,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="PpA-Ve-u3v"/>
         <segue reference="IQz-V1-He9"/>
-        <segue reference="hfq-W0-e6M"/>
+        <segue reference="MdD-pw-acI"/>
     </inferredMetricsTieBreakers>
 </document>

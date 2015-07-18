@@ -78,12 +78,15 @@
     self.txtYouPaid.text = [self.root valueForKey:@"price"];
     self.txtNotes.text = [self.root valueForKey:@"notes"];
     self.txtType.text = [self.root valueForKey:@"type"];
+    self.lblReminderType.text = [self.root valueForKey:@"type"];
     NSInteger days = [[AppDelegate sharedAppDelegate] getDifferenceFromTodayTo:[[[self.root valueForKey:@"renewal_date"] componentsSeparatedByString:@" "] firstObject]];
     if (days == 0) {
         self.txtDueDate.text = @"Today";
+        self.lblNumberOfRemainDays.text = @"0";
     }
     else{
         self.txtDueDate.text = [NSString stringWithFormat:@"%d days",(int)days];
+        self.lblNumberOfRemainDays.text = [NSString stringWithFormat:@"%d",(int)days];
     }
     self.txtNotes.textColor = [UIColor whiteColor];
     self.imgTypeIcon.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[self.root valueForKey:@"category"]]];

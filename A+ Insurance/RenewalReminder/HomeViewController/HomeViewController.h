@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnMenu;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNoRecordFound;
 @property (weak, nonatomic) IBOutlet UIButton *btnNorecordFound;
+@property (weak, nonatomic) IBOutlet UILabel *lblNumberOfRemainDays;
+@property (weak, nonatomic) IBOutlet UILabel *lblReminderType;
 
 - (IBAction)clickedNoRecord:(id)sender;
 @end
