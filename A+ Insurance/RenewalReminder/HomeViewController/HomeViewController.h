@@ -20,4 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblReminderType;
 
 - (IBAction)clickedNoRecord:(id)sender;
+
+- (IBAction)shareOnFacebook:(id)sender;
+- (IBAction)shareOnTwitter:(id)sender;
+
 @end

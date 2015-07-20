@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ePN-mV-8Xn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ePN-mV-8Xn">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -626,6 +626,9 @@
                                         <state key="normal" image="facebook_button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="shareOnFacebook:" destination="YZ1-Dc-O8s" eventType="touchUpInside" id="L2k-L6-JBa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baj-Iv-cBE">
                                         <rect key="frame" x="165" y="151" width="33" height="33"/>
@@ -636,6 +639,9 @@
                                         <state key="normal" image="twitter_button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="shareOnTwitter:" destination="YZ1-Dc-O8s" eventType="touchUpInside" id="DfF-QT-leE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.61568627450000002" green="0.76078431369999999" blue="0.85882352939999995" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
@@ -1032,12 +1038,18 @@
                                         <state key="normal" image="facebook_button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="shareOnFacebook:" destination="D3u-pq-Bl9" eventType="touchUpInside" id="Fc6-VZ-h91"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8H-mo-JNn">
                                         <rect key="frame" x="165" y="151" width="33" height="33"/>
                                         <state key="normal" image="twitter_button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="shareOnTwitter:" destination="D3u-pq-Bl9" eventType="touchUpInside" id="76M-qI-Z2E"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.61568627450980395" green="0.76078431372549016" blue="0.85882352941176465" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
@@ -2330,8 +2342,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="PpA-Ve-u3v"/>
         <segue reference="IQz-V1-He9"/>
-        <segue reference="hfq-W0-e6M"/>
+        <segue reference="PpA-Ve-u3v"/>
+        <segue reference="MdD-pw-acI"/>
     </inferredMetricsTieBreakers>
 </document>

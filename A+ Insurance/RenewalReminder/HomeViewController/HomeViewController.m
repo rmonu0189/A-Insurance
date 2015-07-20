@@ -13,6 +13,8 @@
 #import "RenewalViewController.h"
 #import "SWRevealViewController.h"
 #import "Notification.h"
+#import <Social/Social.h>
+
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate, RequestConnectionDelegate>
 @property (nonatomic, strong) NSDictionary *selectedRenewal;
@@ -278,6 +280,22 @@
             }
         }
         
+        if ([AppDelegate sharedAppDelegate].renewalsList30Days.count == 0) {
+            for (NSDictionary *param in [AppDelegate sharedAppDelegate].renewalsListOther) {
+                NSInteger days = [[AppDelegate sharedAppDelegate] getDifferenceFromTodayTo:[[[param valueForKey:@"renewal_date"] componentsSeparatedByString:@" "] firstObject]];
+                if ([minDays isEqualToString:@""]) {
+                    minDays = [NSString stringWithFormat:@"%d",(int)days];
+                    minType = [param valueForKey:@"type"];
+                }
+                else{
+                    if (minDays.integerValue > days) {
+                        minDays = [NSString stringWithFormat:@"%d",(int)days];
+                        minType = [param valueForKey:@"type"];
+                    }
+                }
+            }
+        }
+        
         if ([minDays isEqualToString:@""]) {
             self.lblReminderType.text = @"";
             self.lblNumberOfRemainDays.text = @"0";
@@ -312,7 +330,32 @@
         self.tblMenu.hidden = YES;
     }
 }
+
 - (IBAction)clickedNoRecord:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.comparewithus.com/apptour/"]];
+}
+
+- (IBAction)shareOnFacebook:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        SLComposeViewController *vc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [vc setInitialText:[NSString stringWithFormat:@"%@ days are due for renewal \"%@\"",self.lblNumberOfRemainDays.text,self.lblReminderType.text]];
+        [self presentViewController:vc animated:YES completion:nil];
+    } else {
+        NSString *message = @"It seems that we cannot talk to Facebook at the moment or you have not yet added your Facebook account to this device. Go to the Settings and add your Facebook account to this device.";
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+}
+
+- (IBAction)shareOnTwitter:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
+        SLComposeViewController *vc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [vc setInitialText:[NSString stringWithFormat:@"%@ days are due for renewal \"%@\"",self.lblNumberOfRemainDays.text,self.lblReminderType.text]];
+        [self presentViewController:vc animated:YES completion:nil];
+    } else {
+        NSString *message = @"It seems that we cannot talk to Twitter at the moment or you have not yet added your Twitter account to this device. Go to the Settings and add your Twitter account to this device.";
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
 }
 @end

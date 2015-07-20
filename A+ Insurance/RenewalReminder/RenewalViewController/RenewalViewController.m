@@ -10,6 +10,7 @@
 #import "Notification.h"
 #import "RequestConnection.h"
 #import "AddRenewalViewController.h"
+#import <Social/Social.h>
 
 @interface RenewalViewController ()< RequestConnectionDelegate>
 {
@@ -279,8 +280,8 @@
     [[AppDelegate sharedAppDelegate] stopLoadingView];
     if (!error) {
         
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[response valueForKey:@"result"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[response valueForKey:@"result"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+//        [alert show];
         if ([[response valueForKey:@"method"] isEqualToString:@"DELETE_RENEWAL"]) {
             Notification *noti = [[Notification alloc] init];
             [noti deleteNotification:self.root];
@@ -305,5 +306,28 @@
     }
 }
 
+- (IBAction)shareOnFacebook:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        SLComposeViewController *vc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [vc setInitialText:[NSString stringWithFormat:@"%@ days are due for renewal \"%@\"",self.lblNumberOfRemainDays.text,self.lblReminderType.text]];
+        [self presentViewController:vc animated:YES completion:nil];
+    } else {
+        NSString *message = @"It seems that we cannot talk to Facebook at the moment or you have not yet added your Facebook account to this device. Go to the Settings and add your Facebook account to this device.";
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+}
+
+- (IBAction)shareOnTwitter:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
+        SLComposeViewController *vc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [vc setInitialText:[NSString stringWithFormat:@"%@ days are due for renewal \"%@\"",self.lblNumberOfRemainDays.text,self.lblReminderType.text]];
+        [self presentViewController:vc animated:YES completion:nil];
+    } else {
+        NSString *message = @"It seems that we cannot talk to Twitter at the moment or you have not yet added your Twitter account to this device. Go to the Settings and add your Twitter account to this device.";
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+}
 
 @end

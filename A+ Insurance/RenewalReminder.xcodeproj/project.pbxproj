@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5475EC501B5D473400713537 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5475EC4F1B5D473400713537 /* Social.framework */; };
 		92341D8F1A7FB06500F38390 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92341D8E1A7FB06500F38390 /* Main-iPad.storyboard */; };
 		92341D901A7FB06500F38390 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92341D8E1A7FB06500F38390 /* Main-iPad.storyboard */; };
 		92341D921A7FB92800F38390 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92341D911A7FB92800F38390 /* FacebookSDK.framework */; };
@@ -451,6 +452,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5475EC4F1B5D473400713537 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		92341D8E1A7FB06500F38390 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
 		92341D911A7FB92800F38390 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		92341D951A7FB95C00F38390 /* FacebookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookManager.h; sourceTree = "<group>"; };
@@ -704,6 +706,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5475EC501B5D473400713537 /* Social.framework in Frameworks */,
 				FA12DC831A7678A60038CBDF /* CoreGraphics.framework in Frameworks */,
 				92341D921A7FB92800F38390 /* FacebookSDK.framework in Frameworks */,
 				FA12DC851A7678A60038CBDF /* UIKit.framework in Frameworks */,
@@ -783,6 +786,7 @@
 		FA12DC7F1A7678A60038CBDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5475EC4F1B5D473400713537 /* Social.framework */,
 				92341D911A7FB92800F38390 /* FacebookSDK.framework */,
 				FA12DC801A7678A60038CBDF /* Foundation.framework */,
 				FA12DC821A7678A60038CBDF /* CoreGraphics.framework */,

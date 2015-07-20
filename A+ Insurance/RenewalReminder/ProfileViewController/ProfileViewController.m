@@ -202,8 +202,8 @@
         [AppDelegate sharedAppDelegate].me = nil;
         [AppDelegate sharedAppDelegate].me = [[User alloc] initWithDict:[response valueForKey:@"response"]];
         [self setUserValue];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[response valueForKey:@"result"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[response valueForKey:@"result"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+//        [alert show];
         //[self.navigationController popViewControllerAnimated:YES];
     }
     else{

@@ -37,4 +37,8 @@
 - (IBAction)clickedRenewalDate:(id)sender;
 - (IBAction)clickedPickerDone:(id)sender;
 
+- (IBAction)shareOnFacebook:(id)sender;
+- (IBAction)shareOnTwitter:(id)sender;
+
+
 @end

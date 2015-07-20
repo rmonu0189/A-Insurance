@@ -95,7 +95,7 @@
         [[AppDelegate sharedAppDelegate] clearUser];
     }
     else if ([[menus objectAtIndex:indexPath.row] isEqualToString:@"visit_website"]) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.comparewithus.com/"]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.aplusinsurance.co.uk"]];
     }
 }
 
@@ -117,7 +117,7 @@
 }
 
 - (IBAction)clickedTermsOfUse:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.aplusinsurance.co.uk/app/terms/"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.aplusinsurance.co.uk/app/terms"]];
 }
 
 
