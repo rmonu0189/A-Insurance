@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542AF9A71B5E02EF004A9A69 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 542AF9A61B5E02EF004A9A69 /* share.png */; };
+		542AF9A81B5E02EF004A9A69 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 542AF9A61B5E02EF004A9A69 /* share.png */; };
 		5475EC501B5D473400713537 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5475EC4F1B5D473400713537 /* Social.framework */; };
 		92341D8F1A7FB06500F38390 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92341D8E1A7FB06500F38390 /* Main-iPad.storyboard */; };
 		92341D901A7FB06500F38390 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92341D8E1A7FB06500F38390 /* Main-iPad.storyboard */; };
@@ -452,6 +454,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		542AF9A61B5E02EF004A9A69 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		5475EC4F1B5D473400713537 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		92341D8E1A7FB06500F38390 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
 		92341D911A7FB92800F38390 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -1086,6 +1089,7 @@
 		FA9BDF631AC84F4400BFD0E4 /* newAppUI */ = {
 			isa = PBXGroup;
 			children = (
+				542AF9A61B5E02EF004A9A69 /* share.png */,
 				FA0CC0B41AC9BB9B00AC70EA /* btnFacebook.png */,
 				FA0CC0B51AC9BB9B00AC70EA /* btnFacebook@2x.png */,
 				FA0CC0B61AC9BB9B00AC70EA /* btnLogin.png */,
@@ -1403,6 +1407,7 @@
 				FA12DD3D1A768E020038CBDF /* Note.png in Resources */,
 				FAE383B01AB1186300B415FA /* imgAddButton.png in Resources */,
 				FA9BDF921AC857B300BFD0E4 /* downArrow@2x.png in Resources */,
+				542AF9A71B5E02EF004A9A69 /* share.png in Resources */,
 				FAE25BCF1AB41FD000DE26EE /* TravelBack.png in Resources */,
 				FA19B4C91AB74B36003D043C /* imgDeleteRenewal.png in Resources */,
 				FA19B4E31AB75806003D043C /* imgTopProfile.png in Resources */,
@@ -1699,6 +1704,7 @@
 				FA12DCD51A76797C0038CBDF /* Checkbox@2x.png in Resources */,
 				FA0CC0CB1AC9BB9B00AC70EA /* btnTwitter@2x.png in Resources */,
 				FA19B4D81AB7536F003D043C /* imgTopDashboard@2x.png in Resources */,
+				542AF9A81B5E02EF004A9A69 /* share.png in Resources */,
 				FA9BDF911AC857B300BFD0E4 /* downArrow.png in Resources */,
 				FA12DCF51A76797C0038CBDF /* SignInTwitter@2x.png in Resources */,
 				FA12DD821A7698610038CBDF /* SliderButton@2x.png in Resources */,

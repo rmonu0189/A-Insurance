@@ -262,7 +262,6 @@
             self.imgNoRecordFound.hidden = NO;
         }
         
-        
         NSString *minDays = @"";
         NSString *minType = @"";
         
@@ -319,7 +318,6 @@
         rvc.renewalID = [self.selectedRenewal valueForKey:@"rid"];
         rvc.root = self.selectedRenewal;
     }
-    
 }
 
 - (IBAction)clickedMenu:(id)sender {
@@ -338,7 +336,8 @@
 - (IBAction)shareOnFacebook:(id)sender {
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
         SLComposeViewController *vc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-        [vc setInitialText:[NSString stringWithFormat:@"%@ days are due for renewal \"%@\"",self.lblNumberOfRemainDays.text,self.lblReminderType.text]];
+        [vc addImage:[UIImage imageNamed:@"share.png"]];
+        [vc setInitialText:[NSString stringWithFormat:@"%@ days till my %@ is due.",self.lblNumberOfRemainDays.text,self.lblReminderType.text]];
         [self presentViewController:vc animated:YES completion:nil];
     } else {
         NSString *message = @"It seems that we cannot talk to Facebook at the moment or you have not yet added your Facebook account to this device. Go to the Settings and add your Facebook account to this device.";
@@ -350,7 +349,8 @@
 - (IBAction)shareOnTwitter:(id)sender {
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
         SLComposeViewController *vc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [vc setInitialText:[NSString stringWithFormat:@"%@ days are due for renewal \"%@\"",self.lblNumberOfRemainDays.text,self.lblReminderType.text]];
+        [vc addImage:[UIImage imageNamed:@"share.png"]];
+        [vc setInitialText:[NSString stringWithFormat:@"%@ days till my %@ is due.",self.lblNumberOfRemainDays.text,self.lblReminderType.text]];
         [self presentViewController:vc animated:YES completion:nil];
     } else {
         NSString *message = @"It seems that we cannot talk to Twitter at the moment or you have not yet added your Twitter account to this device. Go to the Settings and add your Twitter account to this device.";
@@ -358,4 +358,5 @@
         [alertView show];
     }
 }
+
 @end

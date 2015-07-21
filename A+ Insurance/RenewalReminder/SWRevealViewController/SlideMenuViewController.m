@@ -9,6 +9,7 @@
 #import "SlideMenuViewController.h"
 #import "SWRevealViewController.h"
 #import "TitleRowCell.h"
+#import "HomeViewController.h"
 
 @interface SlideMenuViewController ()
 {
