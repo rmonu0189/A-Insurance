@@ -45,6 +45,7 @@
     self.connection = [[RequestConnection alloc] init];
     self.connection.delegate = self;
     requestType = 1;
+    [[AppDelegate sharedAppDelegate] startLoadingView];
     [self.connection getTypeAndCategory];
     
     arrTypes = [[NSMutableArray alloc] init];
@@ -280,7 +281,7 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     self.txtType.text = [[arrTypes objectAtIndex:row] valueForKey:@"type"];
-    selectTypeIndex = row;
+    selectTypeIndex = (int)row;
 }
 
 - (void)requestResultSuccess:(id)response andError:(NSError *)error{
