@@ -158,8 +158,16 @@
         }
         [cell.lblRemainDays setTextColor:[UIColor colorWithRed:162.0/255. green:31.0/255.0 blue:22.0/255.0 alpha:1.0]];
         cell.lblYouAreWith.text = [param valueForKey:@"provider"];
-        cell.imgFirst.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]];
-        cell.imgBackground.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageBackName:[param valueForKey:@"category"]]];
+        cell.imgFirst.image = nil;
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+            NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]]];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                cell.imgFirst.image = [UIImage imageWithData:imgData];
+            });
+        });
+        
+//        cell.imgFirst.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]];
+//        cell.imgBackground.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageBackName:[param valueForKey:@"category"]]];
         return cell;
     }
     else{
@@ -176,8 +184,17 @@
         }
         
         cell.lblYouAreWith.text = [param valueForKey:@"provider"];
-        cell.imgFirst.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]];
-        cell.imgBackground.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageBackName:[param valueForKey:@"category"]]];
+        
+        cell.imgFirst.image = nil;
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+            NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]]];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                cell.imgFirst.image = [UIImage imageWithData:imgData];
+            });
+        });
+        
+//        cell.imgFirst.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]];
+//        cell.imgBackground.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageBackName:[param valueForKey:@"category"]]];
         [cell.lblRemainDays setTextColor:[UIColor colorWithRed:27.0/255. green:145.0/255.0 blue:1.0/255.0 alpha:1.0]];
         return cell;
     }
@@ -223,6 +240,7 @@
     if (!error) {
         [AppDelegate sharedAppDelegate].renewalsList30Days = (NSMutableArray *)[response valueForKey:@"renewal30days"];
         [AppDelegate sharedAppDelegate].renewalsListOther = (NSMutableArray *)[response valueForKey:@"renewalOther"];
+        [AppDelegate sharedAppDelegate].typeCatgory = (NSMutableArray *)[response valueForKey:@"type"];
         [self reloadTable];
         
         NSInteger count = [[UIApplication sharedApplication] scheduledLocalNotifications].count;

@@ -1853,7 +1853,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
+				PROVISIONING_PROFILE = "d81dfcdb-16b7-49f3-9c97-7d2e2d29c194";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1886,7 +1886,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "5ccaf97c-a477-4ba0-b988-c6f41d4b1662";
+				PROVISIONING_PROFILE = "d81dfcdb-16b7-49f3-9c97-7d2e2d29c194";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1897,8 +1897,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1908,7 +1908,7 @@
 				INFOPLIST_FILE = "RenewalReminder/RenewalReminder-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d81dfcdb-16b7-49f3-9c97-7d2e2d29c194";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1919,8 +1919,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1930,7 +1930,7 @@
 				INFOPLIST_FILE = "RenewalReminder/RenewalReminder-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d81dfcdb-16b7-49f3-9c97-7d2e2d29c194";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1940,8 +1940,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RenewalReminder.app/RenewalReminder";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1956,7 +1956,7 @@
 				);
 				INFOPLIST_FILE = "RenewalReminderTests/RenewalReminderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d81dfcdb-16b7-49f3-9c97-7d2e2d29c194";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1966,8 +1966,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RenewalReminder.app/RenewalReminder";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1978,7 +1978,7 @@
 				GCC_PREFIX_HEADER = "RenewalReminder/RenewalReminder-Prefix.pch";
 				INFOPLIST_FILE = "RenewalReminderTests/RenewalReminderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d81dfcdb-16b7-49f3-9c97-7d2e2d29c194";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};

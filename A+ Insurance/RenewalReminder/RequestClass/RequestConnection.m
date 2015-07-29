@@ -14,6 +14,8 @@
 //-- Live server
 #define SERVER @"http://reminder.premiumsaver.co.uk/mobileuser/mobile.php"
 
+
+
 @interface RequestConnection ()
 {
     NSOperationQueue *queue;
@@ -139,6 +141,7 @@
     NSMutableDictionary *param = [NSMutableDictionary dictionary];
     [param setValue:@"GET_RENEWAL_LIST" forKeyPath:@"action"];
     [param setValue:[AppDelegate sharedAppDelegate].me.userID forKeyPath:@"uid"];
+    [param setValue:@"2" forKeyPath:@"app_type"];
     [self makePostRequestWithParam:param];
 }
 

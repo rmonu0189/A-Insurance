@@ -48,6 +48,7 @@
     
     self.renewalsList30Days = [[NSMutableArray alloc] init];
     self.renewalsListOther = [[NSMutableArray alloc] init];
+    self.typeCatgory = [[NSMutableArray alloc] init];
     
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
         [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound | UIUserNotificationTypeBadge
@@ -180,12 +181,22 @@
 }
 
 - (NSString *)getTypeImageLogoName:(NSString *)strType{
-    if ([strType isEqualToString:@"Utilities"]) {
-        return @"utilityLogo.png";
+    NSString *image = @"";
+    for (NSDictionary *tmp in self.typeCatgory) {
+        if ([[tmp valueForKey:@"id"] integerValue] == strType.integerValue) {
+            image = [tmp valueForKey:@"image"];
+            break;
+        }
     }
-    else{
-        return [strType stringByAppendingString:@"Logo.png"];
-    }
+    return [@"http://reminder.premiumsaver.co.uk/mobileuser/admin/uploads/" stringByAppendingString:image];
+    
+    
+//    if ([strType isEqualToString:@"Utilities"]) {
+//        return @"utilityLogo.png";
+//    }
+//    else{
+//        return [strType stringByAppendingString:@"Logo.png"];
+//    }
 }
 
 - (NSString *)getTypeImageBackName:(NSString *)strType{

@@ -145,10 +145,10 @@
         requestType = 2;
         [[AppDelegate sharedAppDelegate] startLoadingView];
         if ([self.btnAddEdit.titleLabel.text isEqual:@"SAVE"]) {
-            [self.connection editRenewal:self.renewalID UserID:[AppDelegate sharedAppDelegate].me.userID Type:self.txtType.text StartDate:[[AppDelegate sharedAppDelegate] convertOriginalDate:self.txtStartDate.text] RenewalDate:[[AppDelegate sharedAppDelegate] convertOriginalDate:self.txtRenewaldate.text] provider:self.txtProvider.text Price:self.txtPrice.text Notes:self.txtNotes.text Category:[[arrTypes objectAtIndex:selectTypeIndex] valueForKey:@"category"]];
+            [self.connection editRenewal:self.renewalID UserID:[AppDelegate sharedAppDelegate].me.userID Type:self.txtType.text StartDate:[[AppDelegate sharedAppDelegate] convertOriginalDate:self.txtStartDate.text] RenewalDate:[[AppDelegate sharedAppDelegate] convertOriginalDate:self.txtRenewaldate.text] provider:self.txtProvider.text Price:self.txtPrice.text Notes:self.txtNotes.text Category:[[arrTypes objectAtIndex:selectTypeIndex] valueForKey:@"id"]];
         }
         else{
-            [self.connection addRenewal:[AppDelegate sharedAppDelegate].me.userID Type:self.txtType.text Category:[[arrTypes objectAtIndex:selectTypeIndex] valueForKey:@"category"] StartDate:[[AppDelegate sharedAppDelegate] convertOriginalDate:self.txtStartDate.text] RenewalDate:[[AppDelegate sharedAppDelegate] convertOriginalDate:self.txtRenewaldate.text] provider:self.txtProvider.text Price:self.txtPrice.text Notes:self.txtNotes.text];
+            [self.connection addRenewal:[AppDelegate sharedAppDelegate].me.userID Type:self.txtType.text Category:[[arrTypes objectAtIndex:selectTypeIndex] valueForKey:@"id"] StartDate:[[AppDelegate sharedAppDelegate] convertOriginalDate:self.txtStartDate.text] RenewalDate:[[AppDelegate sharedAppDelegate] convertOriginalDate:self.txtRenewaldate.text] provider:self.txtProvider.text Price:self.txtPrice.text Notes:self.txtNotes.text];
         }
     }
 }
@@ -289,6 +289,7 @@
     if (requestType == 1) {
         NSLog(@"%@",response);
         arrTypes = (NSMutableArray *)response;
+        
         [self.typePicker reloadAllComponents];
         return;
     }

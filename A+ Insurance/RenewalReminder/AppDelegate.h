@@ -19,6 +19,7 @@
 @property (nonatomic, strong) NSCalendar *calender;
 @property (nonatomic, strong) NSMutableArray *renewalsList30Days;
 @property (nonatomic, strong) NSMutableArray *renewalsListOther;
+@property (nonatomic, strong) NSMutableArray *typeCatgory;
 @property (nonatomic, strong) User *me;
 @property (nonatomic, strong) NSMutableDictionary *editRenewalData;
 
