@@ -8,8 +8,9 @@
 
 #import "AddRenewalViewController.h"
 #import "RequestConnection.h"
+#import "CategoryVC.h"
 
-@interface AddRenewalViewController ()<UIPickerViewDelegate, UITextViewDelegate, RequestConnectionDelegate>
+@interface AddRenewalViewController ()<UIPickerViewDelegate, UITextViewDelegate, RequestConnectionDelegate, CategoryVCDelegate>
 {
     
     BOOL isSelectStartDate,isSelectRenewalDate;
@@ -48,7 +49,7 @@
     [[AppDelegate sharedAppDelegate] startLoadingView];
     [self.connection getTypeAndCategory];
     
-    arrTypes = [[NSMutableArray alloc] init];
+    arrTypes = [[AppDelegate sharedAppDelegate].typeCatgory mutableCopy];
     
     if (self.root != nil) {
         [self setRootValue];
@@ -121,9 +122,10 @@
 //    if (self.txtType.text.length<=0) {
 //        self.txtType.text =  @"Home";
 //    }
-    self.viewPicker.hidden = NO;
-    self.typePicker.hidden = NO;
-    self.datePicker.hidden = YES;
+//    self.viewPicker.hidden = NO;
+//    self.typePicker.hidden = NO;
+//    self.datePicker.hidden = YES;
+    [self performSegueWithIdentifier:@"category_list" sender:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -284,13 +286,18 @@
     selectTypeIndex = (int)row;
 }
 
+- (void)selectedCategory:(NSDictionary *)category Index:(NSInteger)index{
+    self.txtType.text = [category valueForKey:@"type"];
+    selectTypeIndex = (int)index;
+}
+
 - (void)requestResultSuccess:(id)response andError:(NSError *)error{
     [[AppDelegate sharedAppDelegate] stopLoadingView];
     if (requestType == 1) {
         NSLog(@"%@",response);
-        arrTypes = (NSMutableArray *)response;
-        
-        [self.typePicker reloadAllComponents];
+//        arrTypes = (NSMutableArray *)response;
+//        
+//        [self.typePicker reloadAllComponents];
         return;
     }
     if (!error) {
@@ -312,5 +319,18 @@
     }
 }
 
+
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+     if ([[segue destinationViewController] isKindOfClass:[CategoryVC class]]) {
+         CategoryVC *cvc = (CategoryVC *)[segue destinationViewController];
+         cvc.delegate = self;
+     }
+ }
+ 
 
 @end

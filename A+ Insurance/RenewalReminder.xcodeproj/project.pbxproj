@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00E900001B6AB7A800146D8A /* imgYourRenewal.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E9FFFE1B6AB7A800146D8A /* imgYourRenewal.png */; };
+		00E900011B6AB7A800146D8A /* imgYourRenewal.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E9FFFE1B6AB7A800146D8A /* imgYourRenewal.png */; };
+		00E900021B6AB7A800146D8A /* imgYourRenewal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E9FFFF1B6AB7A800146D8A /* imgYourRenewal@2x.png */; };
+		00E900031B6AB7A800146D8A /* imgYourRenewal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E9FFFF1B6AB7A800146D8A /* imgYourRenewal@2x.png */; };
+		00E9FFF61B6AAD5600146D8A /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E9FFF51B6AAD5600146D8A /* CategoryVC.m */; };
+		00E9FFF71B6AAD5600146D8A /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E9FFF51B6AAD5600146D8A /* CategoryVC.m */; };
+		00E9FFFA1B6AB65600146D8A /* imgRenewalCategory.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E9FFF81B6AB65600146D8A /* imgRenewalCategory.png */; };
+		00E9FFFB1B6AB65600146D8A /* imgRenewalCategory.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E9FFF81B6AB65600146D8A /* imgRenewalCategory.png */; };
+		00E9FFFC1B6AB65600146D8A /* imgRenewalCategory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E9FFF91B6AB65600146D8A /* imgRenewalCategory@2x.png */; };
+		00E9FFFD1B6AB65600146D8A /* imgRenewalCategory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E9FFF91B6AB65600146D8A /* imgRenewalCategory@2x.png */; };
 		542AF9A71B5E02EF004A9A69 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 542AF9A61B5E02EF004A9A69 /* share.png */; };
 		542AF9A81B5E02EF004A9A69 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 542AF9A61B5E02EF004A9A69 /* share.png */; };
 		5475EC501B5D473400713537 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5475EC4F1B5D473400713537 /* Social.framework */; };
@@ -243,10 +253,6 @@
 		FA175D8E1A7E2EC6007B0388 /* logoutIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA175D8B1A7E2EC6007B0388 /* logoutIcon.png */; };
 		FA175D8F1A7E2EC6007B0388 /* logoutIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA175D8C1A7E2EC6007B0388 /* logoutIcon@2x.png */; };
 		FA175D901A7E2EC6007B0388 /* logoutIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA175D8C1A7E2EC6007B0388 /* logoutIcon@2x.png */; };
-		FA19B4BD1AB745F0003D043C /* imgYourRenewal.png in Resources */ = {isa = PBXBuildFile; fileRef = FA19B4BB1AB745F0003D043C /* imgYourRenewal.png */; };
-		FA19B4BE1AB745F0003D043C /* imgYourRenewal.png in Resources */ = {isa = PBXBuildFile; fileRef = FA19B4BB1AB745F0003D043C /* imgYourRenewal.png */; };
-		FA19B4BF1AB745F0003D043C /* imgYourRenewal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA19B4BC1AB745F0003D043C /* imgYourRenewal@2x.png */; };
-		FA19B4C01AB745F0003D043C /* imgYourRenewal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA19B4BC1AB745F0003D043C /* imgYourRenewal@2x.png */; };
 		FA19B4C31AB74A0B003D043C /* imgEditButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FA19B4C11AB74A0B003D043C /* imgEditButton.png */; };
 		FA19B4C41AB74A0B003D043C /* imgEditButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FA19B4C11AB74A0B003D043C /* imgEditButton.png */; };
 		FA19B4C51AB74A0B003D043C /* imgEditButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA19B4C21AB74A0B003D043C /* imgEditButton@2x.png */; };
@@ -454,6 +460,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00E9FFF41B6AAD5600146D8A /* CategoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryVC.h; sourceTree = "<group>"; };
+		00E9FFF51B6AAD5600146D8A /* CategoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryVC.m; sourceTree = "<group>"; };
+		00E9FFF81B6AB65600146D8A /* imgRenewalCategory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgRenewalCategory.png; sourceTree = "<group>"; };
+		00E9FFF91B6AB65600146D8A /* imgRenewalCategory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgRenewalCategory@2x.png"; sourceTree = "<group>"; };
+		00E9FFFE1B6AB7A800146D8A /* imgYourRenewal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgYourRenewal.png; sourceTree = "<group>"; };
+		00E9FFFF1B6AB7A800146D8A /* imgYourRenewal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgYourRenewal@2x.png"; sourceTree = "<group>"; };
 		542AF9A61B5E02EF004A9A69 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		5475EC4F1B5D473400713537 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		92341D8E1A7FB06500F38390 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
@@ -591,8 +603,6 @@
 		FA175D7E1A7E2E3C007B0388 /* settingIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingIcon@2x.png"; sourceTree = "<group>"; };
 		FA175D8B1A7E2EC6007B0388 /* logoutIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoutIcon.png; sourceTree = "<group>"; };
 		FA175D8C1A7E2EC6007B0388 /* logoutIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoutIcon@2x.png"; sourceTree = "<group>"; };
-		FA19B4BB1AB745F0003D043C /* imgYourRenewal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgYourRenewal.png; sourceTree = "<group>"; };
-		FA19B4BC1AB745F0003D043C /* imgYourRenewal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgYourRenewal@2x.png"; sourceTree = "<group>"; };
 		FA19B4C11AB74A0B003D043C /* imgEditButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgEditButton.png; sourceTree = "<group>"; };
 		FA19B4C21AB74A0B003D043C /* imgEditButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgEditButton@2x.png"; sourceTree = "<group>"; };
 		FA19B4C71AB74B36003D043C /* imgDeleteRenewal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgDeleteRenewal.png; sourceTree = "<group>"; };
@@ -731,6 +741,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00E9FFF31B6AAD2400146D8A /* CategoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				00E9FFF41B6AAD5600146D8A /* CategoryVC.h */,
+				00E9FFF51B6AAD5600146D8A /* CategoryVC.m */,
+			);
+			path = CategoryVC;
+			sourceTree = "<group>";
+		};
 		92341D941A7FB95C00F38390 /* FacebookManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -802,6 +821,7 @@
 		FA12DC861A7678A60038CBDF /* RenewalReminder */ = {
 			isa = PBXGroup;
 			children = (
+				00E9FFF31B6AAD2400146D8A /* CategoryVC */,
 				B5B0910F1AC9660A00AD4F9C /* TourViewController */,
 				92341D991A7FBEA700F38390 /* HTTwitterEngine */,
 				92341D941A7FB95C00F38390 /* FacebookManager */,
@@ -996,6 +1016,10 @@
 		FA12DD891A769DAF0038CBDF /* Renewal */ = {
 			isa = PBXGroup;
 			children = (
+				00E9FFFE1B6AB7A800146D8A /* imgYourRenewal.png */,
+				00E9FFFF1B6AB7A800146D8A /* imgYourRenewal@2x.png */,
+				00E9FFF81B6AB65600146D8A /* imgRenewalCategory.png */,
+				00E9FFF91B6AB65600146D8A /* imgRenewalCategory@2x.png */,
 				B5D445BC1AB7FCD20058A7E6 /* imgTop.png */,
 				B5D445BD1AB7FCD20058A7E6 /* imgTop@2x.png */,
 				B5D445B61AB7F0C00058A7E6 /* imgChangePassLabel.png */,
@@ -1014,8 +1038,6 @@
 				FA19B4C81AB74B36003D043C /* imgDeleteRenewal@2x.png */,
 				FA19B4C11AB74A0B003D043C /* imgEditButton.png */,
 				FA19B4C21AB74A0B003D043C /* imgEditButton@2x.png */,
-				FA19B4BB1AB745F0003D043C /* imgYourRenewal.png */,
-				FA19B4BC1AB745F0003D043C /* imgYourRenewal@2x.png */,
 				FAD415371A7D470D0082A65B /* plusButtonNew.png */,
 				FAD415381A7D470D0082A65B /* plusButtonNew@2x.png */,
 				FA12DD8A1A769DAF0038CBDF /* ArrowRight.png */,
@@ -1392,6 +1414,7 @@
 				FA12DCE61A76797C0038CBDF /* Register.png in Resources */,
 				FA12DDB01A769DAF0038CBDF /* WhiteSmallTab.png in Resources */,
 				FA12DCDA1A76797C0038CBDF /* Logo.png in Resources */,
+				00E9FFFC1B6AB65600146D8A /* imgRenewalCategory@2x.png in Resources */,
 				FA12DCE41A76797C0038CBDF /* Password@2x.png in Resources */,
 				FAC8E5C41A8146A3004425A5 /* Note~ipad.png in Resources */,
 				FA12DD9A1A769DAF0038CBDF /* ArrowRight@2x.png in Resources */,
@@ -1410,6 +1433,7 @@
 				FA9BDF921AC857B300BFD0E4 /* downArrow@2x.png in Resources */,
 				542AF9A71B5E02EF004A9A69 /* share.png in Resources */,
 				FAE25BCF1AB41FD000DE26EE /* TravelBack.png in Resources */,
+				00E900021B6AB7A800146D8A /* imgYourRenewal@2x.png in Resources */,
 				FA19B4C91AB74B36003D043C /* imgDeleteRenewal.png in Resources */,
 				FA19B4E31AB75806003D043C /* imgTopProfile.png in Resources */,
 				FAE25BC31AB41FD000DE26EE /* InsuranceBack.png in Resources */,
@@ -1430,7 +1454,6 @@
 				FAC8E5C21A8146A3004425A5 /* Note@2x~ipad.png in Resources */,
 				FAE25BD11AB41FD000DE26EE /* TravelBack@2x.png in Resources */,
 				FAC8E5B61A8141F6004425A5 /* HandImage@2x~ipad.png in Resources */,
-				FA19B4BD1AB745F0003D043C /* imgYourRenewal.png in Resources */,
 				FA19B4CF1AB74EE3003D043C /* imgTopHeader.png in Resources */,
 				FA12DD131A76834D0038CBDF /* Arrow.png in Resources */,
 				FAFB30021A7DD48E009892AA /* TravelLogo@2x.png in Resources */,
@@ -1457,7 +1480,6 @@
 				FA12DD871A769C070038CBDF /* Help@2x.png in Resources */,
 				FAC8E5BC1A8142FC004425A5 /* Arrow@2x~ipad.png in Resources */,
 				FAFB30081A7DD48E009892AA /* utilityLogo.png in Resources */,
-				FA19B4BF1AB745F0003D043C /* imgYourRenewal@2x.png in Resources */,
 				B535E6841AB71EAC00C15AAD /* imgNextOther@2x.png in Resources */,
 				FAEEB6AD1A79629700E68EFF /* plusButton.png in Resources */,
 				FA12DCD01A76797C0038CBDF /* Bg@2x.png in Resources */,
@@ -1498,6 +1520,7 @@
 				FA12DD3F1A768E020038CBDF /* Note@2x.png in Resources */,
 				FA0CC0C41AC9BB9B00AC70EA /* btnSendPassword.png in Resources */,
 				FAD4153B1A7D470D0082A65B /* plusButtonNew@2x.png in Resources */,
+				00E900001B6AB7A800146D8A /* imgYourRenewal.png in Resources */,
 				B5D445BE1AB7FCD20058A7E6 /* imgTop.png in Resources */,
 				FA9BDF961AC85C7F00BFD0E4 /* imgHeader.png in Resources */,
 				FA19B4C51AB74A0B003D043C /* imgEditButton@2x.png in Resources */,
@@ -1510,6 +1533,7 @@
 				FAFB2FF81A7DD48E009892AA /* LifestyleLogo.png in Resources */,
 				FAC8E59B1A81333D004425A5 /* Register@2x~ipad.png in Resources */,
 				FAC8E5A31A81333D004425A5 /* SignInFacebook~ipad.png in Resources */,
+				00E9FFFA1B6AB65600146D8A /* imgRenewalCategory.png in Resources */,
 				FA12DCEA1A76797C0038CBDF /* SignIn.png in Resources */,
 				FA9BDF801AC8522B00BFD0E4 /* rightArrow@2x.png in Resources */,
 				FAE25BBF1AB41FD000DE26EE /* HomeBack.png in Resources */,
@@ -1529,12 +1553,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA12DCD91A76797C0038CBDF /* HandImage@2x.png in Resources */,
+				00E9FFFB1B6AB65600146D8A /* imgRenewalCategory.png in Resources */,
 				B56ED2581AC9023C008DF4D8 /* imgHeaderLogin@2x.png in Resources */,
 				B5C6D7CB1AB85BC900FE45DC /* imgSettingIcon@2x.png in Resources */,
 				FAEEB6AE1A79629700E68EFF /* plusButton.png in Resources */,
 				FA12DCCF1A76797C0038CBDF /* Bg.png in Resources */,
 				FAC8E5841A81333D004425A5 /* Bg@2x~ipad.png in Resources */,
-				FA19B4C01AB745F0003D043C /* imgYourRenewal@2x.png in Resources */,
 				FAC8E5881A81333D004425A5 /* Checkbox@2x~ipad.png in Resources */,
 				FA12DDA31A769DAF0038CBDF /* BigWhiteTab@2x.png in Resources */,
 				B5C6D7C91AB85BC900FE45DC /* imgSettingIcon.png in Resources */,
@@ -1651,9 +1675,9 @@
 				FA12DCFD1A767CFC0038CBDF /* imgLoginField.png in Resources */,
 				FA9BDF991AC85C7F00BFD0E4 /* imgHeader@2x.png in Resources */,
 				B535E6831AB71EAC00C15AAD /* imgNextOther.png in Resources */,
-				FA19B4BE1AB745F0003D043C /* imgYourRenewal.png in Resources */,
 				B535E68B1AB720C800C15AAD /* LifestyleBack@2x.png in Resources */,
 				FA94C6B51A815343002ED872 /* ArrowRight~ipad.png in Resources */,
+				00E9FFFD1B6AB65600146D8A /* imgRenewalCategory@2x.png in Resources */,
 				FAC8E5B31A814035004425A5 /* SendMyPassword~ipad.png in Resources */,
 				FA12DCAA1A7678A70038CBDF /* InfoPlist.strings in Resources */,
 				FA12DD201A76834D0038CBDF /* WhiteTab.png in Resources */,
@@ -1700,6 +1724,7 @@
 				FA12DCDD1A76797C0038CBDF /* Logo@2x.png in Resources */,
 				FA12DCF71A76797C0038CBDF /* WhiteBigTab.png in Resources */,
 				FA175D841A7E2E3C007B0388 /* profileIcon.png in Resources */,
+				00E900031B6AB7A800146D8A /* imgYourRenewal@2x.png in Resources */,
 				FA12DD461A768E020038CBDF /* Telephone.png in Resources */,
 				FA12DD3A1A768E020038CBDF /* InnerTab.png in Resources */,
 				FA12DCD51A76797C0038CBDF /* Checkbox@2x.png in Resources */,
@@ -1713,6 +1738,7 @@
 				FA12DCE51A76797C0038CBDF /* Password@2x.png in Resources */,
 				FA19B4C41AB74A0B003D043C /* imgEditButton.png in Resources */,
 				FAD4153C1A7D470D0082A65B /* plusButtonNew@2x.png in Resources */,
+				00E900011B6AB7A800146D8A /* imgYourRenewal.png in Resources */,
 				FA12DD441A768E020038CBDF /* registerbutton@2x.png in Resources */,
 				FA12DCF31A76797C0038CBDF /* SignInTwitter.png in Resources */,
 				FAFB2FEB1A7DD48E009892AA /* HomeLogo@2x.png in Resources */,
@@ -1747,6 +1773,7 @@
 				FAEBD8E61A7C047800DE7284 /* RenewalViewController.m in Sources */,
 				FAEEB6A91A7961FA00E68EFF /* AddRenewalViewController.m in Sources */,
 				FAEBD8E11A7C03B900DE7284 /* ProfileViewController.m in Sources */,
+				00E9FFF61B6AAD5600146D8A /* CategoryVC.m in Sources */,
 				FAEEB69C1A7953E700E68EFF /* HomeViewController.m in Sources */,
 				B5B091121AC9661B00AD4F9C /* TourViewController.m in Sources */,
 				FA12DD081A767F470038CBDF /* LoginViewController.m in Sources */,
@@ -1771,6 +1798,7 @@
 				FAEEB6A51A795F2200E68EFF /* RenewalOtherCell.m in Sources */,
 				9296C1231A7C9F6300735A24 /* User.m in Sources */,
 				FAEBD8E71A7C047800DE7284 /* RenewalViewController.m in Sources */,
+				00E9FFF71B6AAD5600146D8A /* CategoryVC.m in Sources */,
 				FA368F881A7E21C200A243D8 /* SlideMenuViewController.m in Sources */,
 				FA7059711A7E4FEA00F4E5B1 /* Notification.m in Sources */,
 				92341D9D1A7FBEA700F38390 /* HTTwitterEngine.m in Sources */,
@@ -1854,7 +1882,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "46aaa566-0fc2-4e0a-8aac-dbb2467078fa";
+				PROVISIONING_PROFILE = "d81dfcdb-16b7-49f3-9c97-7d2e2d29c194";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1887,7 +1915,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "46aaa566-0fc2-4e0a-8aac-dbb2467078fa";
+				PROVISIONING_PROFILE = "d81dfcdb-16b7-49f3-9c97-7d2e2d29c194";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1941,8 +1969,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RenewalReminder.app/RenewalReminder";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1967,8 +1995,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RenewalReminder.app/RenewalReminder";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
