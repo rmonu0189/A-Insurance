@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ePN-mV-8Xn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ePN-mV-8Xn">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -103,17 +103,17 @@
                                 </connections>
                             </textField>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="mail_box" translatesAutoresizingMaskIntoConstraints="NO" id="HzI-1Z-stY">
-                                <rect key="frame" x="50" y="245" width="25" height="25"/>
+                                <rect key="frame" x="52" y="248" width="20" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="3lt-iG-fJJ"/>
-                                    <constraint firstAttribute="width" constant="25" id="4n5-Wf-Nn8"/>
+                                    <constraint firstAttribute="height" constant="20" id="3lt-iG-fJJ"/>
+                                    <constraint firstAttribute="width" constant="20" id="4n5-Wf-Nn8"/>
                                 </constraints>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="password_lock" translatesAutoresizingMaskIntoConstraints="NO" id="mq6-pn-xhb">
-                                <rect key="frame" x="50" y="283" width="25" height="25"/>
+                                <rect key="frame" x="52" y="286" width="20" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="beJ-7H-ISE"/>
-                                    <constraint firstAttribute="width" constant="25" id="f2s-zw-Cia"/>
+                                    <constraint firstAttribute="height" constant="20" id="beJ-7H-ISE"/>
+                                    <constraint firstAttribute="width" constant="20" id="f2s-zw-Cia"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfJ-ei-zyh">
@@ -168,26 +168,26 @@
                             <constraint firstItem="mfJ-ei-zyh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="37" id="Cgm-M3-STx"/>
                             <constraint firstItem="GqP-QO-crd" firstAttribute="top" secondItem="a31-7N-bDp" secondAttribute="bottom" constant="8" id="Dcv-oJ-K4W"/>
                             <constraint firstAttribute="trailing" secondItem="8on-EB-4it" secondAttribute="trailing" id="FX4-7p-MES"/>
-                            <constraint firstItem="6x6-Hq-1ol" firstAttribute="leading" secondItem="HzI-1Z-stY" secondAttribute="trailing" constant="8" id="Ltx-qL-EE4"/>
+                            <constraint firstItem="6x6-Hq-1ol" firstAttribute="leading" secondItem="HzI-1Z-stY" secondAttribute="trailing" constant="11" id="Ltx-qL-EE4"/>
                             <constraint firstItem="CLC-tq-0rg" firstAttribute="top" secondItem="m95-ZP-Jht" secondAttribute="bottom" constant="25" id="M6C-3a-2Ls"/>
                             <constraint firstItem="YXC-vf-Emv" firstAttribute="top" secondItem="d50-tA-Xhw" secondAttribute="bottom" constant="17" id="P4W-Vq-CcP"/>
                             <constraint firstAttribute="trailing" secondItem="CLC-tq-0rg" secondAttribute="trailing" constant="42" id="PWu-03-SpB"/>
                             <constraint firstAttribute="trailing" secondItem="m95-ZP-Jht" secondAttribute="trailing" constant="50" id="S1T-aR-6dr"/>
-                            <constraint firstItem="CLC-tq-0rg" firstAttribute="top" secondItem="mq6-pn-xhb" secondAttribute="bottom" constant="28" id="SMH-9k-XA6"/>
+                            <constraint firstItem="CLC-tq-0rg" firstAttribute="top" secondItem="mq6-pn-xhb" secondAttribute="bottom" constant="30" id="SMH-9k-XA6"/>
                             <constraint firstItem="8wv-Wh-hdS" firstAttribute="top" secondItem="CLC-tq-0rg" secondAttribute="bottom" constant="53" id="Ukz-Ze-HT5"/>
-                            <constraint firstItem="HzI-1Z-stY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="VB0-Ck-P6K"/>
-                            <constraint firstItem="mq6-pn-xhb" firstAttribute="top" secondItem="HzI-1Z-stY" secondAttribute="bottom" constant="13" id="Vox-hq-Ahp"/>
+                            <constraint firstItem="HzI-1Z-stY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="52" id="VB0-Ck-P6K"/>
+                            <constraint firstItem="mq6-pn-xhb" firstAttribute="top" secondItem="HzI-1Z-stY" secondAttribute="bottom" constant="18" id="Vox-hq-Ahp"/>
                             <constraint firstAttribute="trailing" secondItem="a31-7N-bDp" secondAttribute="trailing" constant="42" id="Yq3-1P-cTh"/>
                             <constraint firstItem="a31-7N-bDp" firstAttribute="top" secondItem="8wv-Wh-hdS" secondAttribute="bottom" constant="8" id="fqN-xe-uon"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="8on-EB-4it" secondAttribute="bottom" id="jxK-gM-h0A"/>
                             <constraint firstAttribute="trailing" secondItem="YXC-vf-Emv" secondAttribute="trailing" constant="42" id="l9B-sa-yu7"/>
                             <constraint firstItem="CLC-tq-0rg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="43" id="lvN-9A-aOx"/>
-                            <constraint firstItem="mq6-pn-xhb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="nmd-lg-qll"/>
+                            <constraint firstItem="mq6-pn-xhb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="52" id="nmd-lg-qll"/>
                             <constraint firstItem="8on-EB-4it" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="qYC-zf-YnW"/>
                             <constraint firstItem="8on-EB-4it" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="rm4-gi-JZZ"/>
                             <constraint firstItem="YXC-vf-Emv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="43" id="sV1-C7-nEq"/>
                             <constraint firstItem="a31-7N-bDp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="43" id="tmB-y2-fab"/>
-                            <constraint firstItem="m95-ZP-Jht" firstAttribute="leading" secondItem="mq6-pn-xhb" secondAttribute="trailing" constant="8" id="wN6-dm-xE2"/>
+                            <constraint firstItem="m95-ZP-Jht" firstAttribute="leading" secondItem="mq6-pn-xhb" secondAttribute="trailing" constant="11" id="wN6-dm-xE2"/>
                             <constraint firstAttribute="trailing" secondItem="6x6-Hq-1ol" secondAttribute="trailing" constant="50" id="yDJ-NY-c5X"/>
                         </constraints>
                     </view>
@@ -372,16 +372,13 @@
                                                         <rect key="frame" x="7" y="78" width="20" height="20"/>
                                                     </imageView>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="mail_box" translatesAutoresizingMaskIntoConstraints="NO" id="vcl-9D-Y2R">
-                                                        <rect key="frame" x="6" y="113" width="25" height="25"/>
+                                                        <rect key="frame" x="7" y="116" width="20" height="20"/>
                                                     </imageView>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="mail_box" translatesAutoresizingMaskIntoConstraints="NO" id="Ydr-AG-Vv4">
-                                                        <rect key="frame" x="6" y="148" width="25" height="25"/>
+                                                        <rect key="frame" x="7" y="151" width="20" height="20"/>
                                                     </imageView>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="telephone_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Saf-tg-eid">
                                                         <rect key="frame" x="8" y="183" width="20" height="20"/>
-                                                    </imageView>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="password_lock" translatesAutoresizingMaskIntoConstraints="NO" id="zrw-8N-3qP">
-                                                        <rect key="frame" x="6" y="221" width="25" height="25"/>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X0I-7K-skN">
                                                         <rect key="frame" x="39" y="6" width="180" height="30"/>
@@ -456,6 +453,9 @@
                                                             <action selector="clickedTitle:" destination="dMl-55-j4N" eventType="touchUpInside" id="MeK-W8-cDY"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="password_lock" translatesAutoresizingMaskIntoConstraints="NO" id="zrw-8N-3qP">
+                                                        <rect key="frame" x="7" y="224" width="20" height="20"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <userDefinedRuntimeAttributes>
@@ -1524,6 +1524,29 @@
             </objects>
             <point key="canvasLocation" x="1809" y="925"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="dur-e1-GQl">
+            <objects>
+                <viewController id="qsc-QR-w1N" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QAL-Pe-YPc"/>
+                        <viewControllerLayoutGuide type="bottom" id="nFB-K3-tZb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YNs-TQ-bbC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="VYT-YD-JhJ">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="569"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5n4-f1-CV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2193" y="919"/>
+        </scene>
         <!--Profile View Controller-->
         <scene sceneID="FZr-CW-ycW">
             <objects>
@@ -2326,7 +2349,7 @@
         <image name="downArrow.png" width="14" height="14"/>
         <image name="edit_pen" width="25" height="25"/>
         <image name="facebook_button" width="33" height="33"/>
-        <image name="facebook_button_big" width="288" height="38"/>
+        <image name="facebook_button_big" width="260" height="35"/>
         <image name="header_app_logo" width="58" height="39"/>
         <image name="home_app_logo" width="108" height="73"/>
         <image name="home_background" width="320" height="568"/>
@@ -2351,7 +2374,7 @@
         <image name="right_arrow" width="8" height="13"/>
         <image name="telephone_icon" width="30" height="27"/>
         <image name="twitter_button" width="33" height="33"/>
-        <image name="twitter_button_big" width="288" height="38"/>
+        <image name="twitter_button_big" width="260" height="35"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
