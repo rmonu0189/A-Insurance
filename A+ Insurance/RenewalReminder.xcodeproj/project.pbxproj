@@ -1863,8 +1863,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1882,7 +1882,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "d81dfcdb-16b7-49f3-9c97-7d2e2d29c194";
+				PROVISIONING_PROFILE = "b05724fa-515b-40ea-81a1-49720c10ea1e";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1903,8 +1903,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Himanshu Arya (CE6Z3NB9HQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Grant Joiner (T42P86TFAJ)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1915,7 +1915,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "d81dfcdb-16b7-49f3-9c97-7d2e2d29c194";
+				PROVISIONING_PROFILE = "b05724fa-515b-40ea-81a1-49720c10ea1e";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1937,7 +1937,7 @@
 				INFOPLIST_FILE = "RenewalReminder/RenewalReminder-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b05724fa-515b-40ea-81a1-49720c10ea1e";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1959,7 +1959,7 @@
 				INFOPLIST_FILE = "RenewalReminder/RenewalReminder-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b05724fa-515b-40ea-81a1-49720c10ea1e";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1985,7 +1985,7 @@
 				);
 				INFOPLIST_FILE = "RenewalReminderTests/RenewalReminderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b05724fa-515b-40ea-81a1-49720c10ea1e";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -2007,7 +2007,7 @@
 				GCC_PREFIX_HEADER = "RenewalReminder/RenewalReminder-Prefix.pch";
 				INFOPLIST_FILE = "RenewalReminderTests/RenewalReminderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b05724fa-515b-40ea-81a1-49720c10ea1e";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
