@@ -35,12 +35,7 @@
     NSDictionary *param = [[AppDelegate sharedAppDelegate].typeCatgory objectAtIndex:indexPath.row];
     cell.lblTitle.text = [param valueForKey:@"type"];
     cell.imgFirst.image = nil;
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-        NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"image"]]]];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            cell.imgFirst.image = [UIImage imageWithData:imgData];
-        });
-    });
+    [[AppDelegate sharedAppDelegate] setImageFromURL:[param valueForKey:@"image"] ImageView:cell.imgFirst withUniqueValue:indexPath.row];
     return cell;
 }
 

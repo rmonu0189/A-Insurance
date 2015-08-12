@@ -202,6 +202,7 @@
         [AppDelegate sharedAppDelegate].me = nil;
         [AppDelegate sharedAppDelegate].me = [[User alloc] initWithDict:[response valueForKey:@"response"]];
         [self setUserValue];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"open_home" object:nil];
 //        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[response valueForKey:@"result"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 //        [alert show];
         //[self.navigationController popViewControllerAnimated:YES];

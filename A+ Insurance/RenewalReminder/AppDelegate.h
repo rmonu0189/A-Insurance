@@ -33,8 +33,9 @@
 - (NSInteger)getDifferenceFromTodayTo:(NSString *)end;
 - (NSString *)convertDateFormate:(NSString *)strDate;
 - (NSString *)convertOriginalDate:(NSString *)date;
-
+@property (nonatomic, strong) NSOperationQueue *queue;
 - (NSString *)getTypeImageLogoName:(NSString *)strType;
 - (NSString *)getTypeImageBackName:(NSString *)strType;
+- (void)setImageFromURL:(NSString *)imageURL ImageView:(UIImageView *)imageView withUniqueValue:(NSInteger)unique;
 
 @end

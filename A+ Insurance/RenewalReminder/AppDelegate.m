@@ -188,7 +188,7 @@
             break;
         }
     }
-    return [@"http://reminder.premiumsaver.co.uk/mobileuser/admin/uploads/" stringByAppendingString:image];
+    return image;
     
     
 //    if ([strType isEqualToString:@"Utilities"]) {
@@ -217,4 +217,21 @@
     }
 }
 
+
+- (void)setImageFromURL:(NSString *)imageURL ImageView:(UIImageView *)imageView withUniqueValue:(NSInteger)unique{
+    imageView.tag = unique;
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:imageURL] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30.0];
+    if (!self.queue) self.queue = [[NSOperationQueue alloc] init];
+    [NSURLConnection sendAsynchronousRequest:request queue:self.queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        if (!connectionError) {
+            UIImage *image = [UIImage imageWithData:(NSData *)data];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (imageView.tag == unique) {
+                    imageView.image = image;
+                    
+                }
+            });
+        }
+    }];
+}
 @end

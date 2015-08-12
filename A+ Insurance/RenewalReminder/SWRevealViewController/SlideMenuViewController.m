@@ -33,6 +33,8 @@
     [super viewDidLoad];
     
     menus = @[@"logo", @"home", @"profile", @"setting", @"visit_website", @"logout", @"terms_of_use"];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openHomePage) name:@"open_home" object:nil];
 }
 
 //- (BOOL)prefersStatusBarHidden{
@@ -115,6 +117,10 @@
         };
         
     }
+}
+
+- (void)openHomePage{
+    [self performSegueWithIdentifier:@"open_home_page" sender:nil];
 }
 
 - (IBAction)clickedTermsOfUse:(id)sender {

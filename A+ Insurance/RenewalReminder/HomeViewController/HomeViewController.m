@@ -159,12 +159,13 @@
         [cell.lblRemainDays setTextColor:[UIColor colorWithRed:162.0/255. green:31.0/255.0 blue:22.0/255.0 alpha:1.0]];
         cell.lblYouAreWith.text = [param valueForKey:@"provider"];
         cell.imgFirst.image = nil;
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-            NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]]];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                cell.imgFirst.image = [UIImage imageWithData:imgData];
-            });
-        });
+        [[AppDelegate sharedAppDelegate] setImageFromURL:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]] ImageView:cell.imgFirst withUniqueValue:indexPath.row];
+//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+//            NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]]];
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                cell.imgFirst.image = [UIImage imageWithData:imgData];
+//            });
+//        });
         
 //        cell.imgFirst.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]];
 //        cell.imgBackground.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageBackName:[param valueForKey:@"category"]]];
@@ -186,12 +187,13 @@
         cell.lblYouAreWith.text = [param valueForKey:@"provider"];
         
         cell.imgFirst.image = nil;
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-            NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]]];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                cell.imgFirst.image = [UIImage imageWithData:imgData];
-            });
-        });
+        [[AppDelegate sharedAppDelegate] setImageFromURL:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]] ImageView:cell.imgFirst withUniqueValue:indexPath.row];
+//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+//            NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]]];
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                cell.imgFirst.image = [UIImage imageWithData:imgData];
+//            });
+//        });
         
 //        cell.imgFirst.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageLogoName:[param valueForKey:@"category"]]];
 //        cell.imgBackground.image = [UIImage imageNamed:[[AppDelegate sharedAppDelegate] getTypeImageBackName:[param valueForKey:@"category"]]];
