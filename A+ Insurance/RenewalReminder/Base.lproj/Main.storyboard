@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ePN-mV-8Xn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ePN-mV-8Xn">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -219,7 +219,7 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="home_background" translatesAutoresizingMaskIntoConstraints="NO" id="V6b-6i-80y">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inD-FX-dVT">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inD-FX-dVT">
                                 <rect key="frame" x="47" y="304" width="227" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="wru-cT-L9T"/>
@@ -231,7 +231,7 @@
                                     <action selector="clickedSendMyPassword:" destination="Uz4-1o-578" eventType="touchUpInside" id="cO2-vf-K7R"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8R-IB-paV">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B8R-IB-paV">
                                 <rect key="frame" x="47" y="245" width="227" height="40"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="mail_box" translatesAutoresizingMaskIntoConstraints="NO" id="IM7-dw-E8w">
@@ -269,7 +269,7 @@
                                     <action selector="clickedBackLogin:" destination="Uz4-1o-578" eventType="touchUpInside" id="MPi-Hu-4l9"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="home_app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="HyX-33-Tkh">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="home_app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="HyX-33-Tkh">
                                 <rect key="frame" x="106" y="154" width="108" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="108" id="0m5-yq-cHM"/>
@@ -1166,8 +1166,8 @@
                                 <rect key="frame" x="0.0" y="132" width="320" height="436"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="downArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="aso-eG-Pvv">
-                                <rect key="frame" x="294" y="116" width="14" height="14"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.49999999999999961" contentMode="center" image="downArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="aso-eG-Pvv">
+                                <rect key="frame" x="294" y="99" width="14" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="7Q3-h9-Ih5"/>
                                     <constraint firstAttribute="width" constant="14" id="ETV-5q-s75"/>
@@ -1202,7 +1202,7 @@
                             <constraint firstItem="fKb-Zs-ccx" firstAttribute="leading" secondItem="Mn0-0n-9Gi" secondAttribute="leading" id="ZtO-xy-l9C"/>
                             <constraint firstAttribute="trailing" secondItem="3XN-wd-H4I" secondAttribute="trailing" id="aTf-nb-BZK"/>
                             <constraint firstItem="LdN-E3-1BL" firstAttribute="top" secondItem="tvA-X9-LER" secondAttribute="bottom" constant="33" id="b8h-lS-1gq"/>
-                            <constraint firstItem="aso-eG-Pvv" firstAttribute="top" secondItem="tvA-X9-LER" secondAttribute="bottom" constant="96" id="fMp-VG-kmZ"/>
+                            <constraint firstItem="aso-eG-Pvv" firstAttribute="top" secondItem="tvA-X9-LER" secondAttribute="bottom" constant="79" id="fMp-VG-kmZ"/>
                             <constraint firstItem="fKb-Zs-ccx" firstAttribute="top" secondItem="Mn0-0n-9Gi" secondAttribute="top" id="x0J-jZ-T8e"/>
                             <constraint firstAttribute="trailing" secondItem="aso-eG-Pvv" secondAttribute="trailing" constant="12" id="yCw-6e-5Ud"/>
                             <constraint firstItem="VQI-TB-lhV" firstAttribute="top" secondItem="3XN-wd-H4I" secondAttribute="bottom" constant="8" id="zST-Ag-PCR"/>
@@ -1591,7 +1591,7 @@
                                                         <constraint firstAttribute="height" constant="28" id="mIN-qN-a0R"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qyq-pc-liv">
