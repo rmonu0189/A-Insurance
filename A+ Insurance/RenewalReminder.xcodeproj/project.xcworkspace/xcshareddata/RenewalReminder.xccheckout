@@ -7,29 +7,31 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3BBBAFE8-4EDF-47D4-86EC-50EA11973ADD</string>
 	<key>IDESourceControlProjectName</key>
-	<string>RenewalReminder</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>506446762EAEF85C3EC4A5187C66C9217B29178E</key>
 		<string>https://bitbucket.org/monu90747/a-insurance.git</string>
 		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++6972</key>
-		<string>https://subversion.assembla.com/svn/commonspace</string>
+		<string>https://subversion.assembla.com/svn/commonspace/RealBlackLove/IOS/RealBlackLove_Redesign/MyWork/Bitbucker/Grant/A+%2520Insurance</string>
 		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++9919</key>
 		<string>https://subversion.assembla.com/svn/commonspace/RealBlackLove/IOS/RealBlackLove_Redesign</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>A+ Insurance/RenewalReminder.xcodeproj</string>
+	<string>A+ Insurance/RenewalReminder.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>506446762EAEF85C3EC4A5187C66C9217B29178E</key>
 		<string>../../..</string>
 		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++6972</key>
-		<string>../../../../A+%20Insurance</string>
+		<string>../../..</string>
 		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++9919</key>
-		<string>../../../..</string>
+		<string>../../../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
+		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++6972</key>
+		<string>https://subversion.assembla.com/svn/commonspace</string>
 		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++9919</key>
 		<string>https://subversion.assembla.com/svn/commonspace</string>
 	</dict>
@@ -47,13 +49,13 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>bc292187-4652-424f-b7f1-ee4c49d5ef79++9919</string>
 			<key>IDESourceControlWCCName</key>
-			<string></string>
+			<string>..</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>bc292187-4652-424f-b7f1-ee4c49d5ef79++6972</string>
+			<string>506446762EAEF85C3EC4A5187C66C9217B29178E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>A+%20Insurance</string>
 		</dict>
@@ -64,14 +66,6 @@
 			<string>bc292187-4652-424f-b7f1-ee4c49d5ef79++6972</string>
 			<key>IDESourceControlWCCName</key>
 			<string>A+%20Insurance</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>506446762EAEF85C3EC4A5187C66C9217B29178E</string>
-			<key>IDESourceControlWCCName</key>
-			<string>A+%20Reminder</string>
 		</dict>
 	</array>
 </dict>

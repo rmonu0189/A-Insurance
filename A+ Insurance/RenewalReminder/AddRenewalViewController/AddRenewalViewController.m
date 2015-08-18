@@ -187,12 +187,26 @@
 - (IBAction)clickedRenewalDate:(id)sender {
     isSelectRenewalDate = YES;
     isSelectStartDate = NO;
+    if (self.txtRenewaldate.text.length > 0) {
+        NSDateFormatter *f = [[NSDateFormatter alloc] init];
+        [f setDateStyle:NSDateFormatterFullStyle];
+        [f setTimeZone:[NSTimeZone systemTimeZone]];
+        [f setDateFormat:@"EEEE, d MMMM, yyyy"];
+        self.datePicker.date = [f dateFromString:self.txtRenewaldate.text];
+    }
     [self showDatePicker];
 }
 
 - (IBAction)clickedStartDate:(id)sender {
     isSelectStartDate = YES;
     isSelectRenewalDate = NO;
+    if (self.txtStartDate.text.length > 0) {
+        NSDateFormatter *f = [[NSDateFormatter alloc] init];
+        [f setDateStyle:NSDateFormatterFullStyle];
+        [f setTimeZone:[NSTimeZone systemTimeZone]];
+        [f setDateFormat:@"EEEE, d MMMM, yyyy"];
+        self.datePicker.date = [f dateFromString:self.txtStartDate.text];
+    }
     [self showDatePicker];
 }
 

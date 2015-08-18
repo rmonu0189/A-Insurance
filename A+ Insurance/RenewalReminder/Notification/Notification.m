@@ -40,10 +40,45 @@
 }
 
 - (void)addNotification:(NSDictionary *)alertRenewal{
-    NSString *strDate = [[[alertRenewal valueForKey:@"renewal_date"] componentsSeparatedByString:@" "] firstObject];
-    [self addNotificationByDate:[self.notificationDateFormatter dateFromString:[self getPreviousDate:-2 withDate:strDate]] Renewal:alertRenewal Days:2];
-    [self addNotificationByDate:[self.notificationDateFormatter dateFromString:[self getPreviousDate:-14 withDate:strDate]] Renewal:alertRenewal Days:14];
-    [self addNotificationByDate:[self.notificationDateFormatter dateFromString:[self getPreviousDate:-30 withDate:strDate]] Renewal:alertRenewal Days:30];
+    if ([self isEnableNotification])
+    {
+        NSLog(@"Notifications Enabled");
+        NSString *strDate = [[[alertRenewal valueForKey:@"renewal_date"] componentsSeparatedByString:@" "] firstObject];
+        [self addNotificationByDate:[self.notificationDateFormatter dateFromString:[self getPreviousDate:-2 withDate:strDate]] Renewal:alertRenewal Days:2];
+        [self addNotificationByDate:[self.notificationDateFormatter dateFromString:[self getPreviousDate:-14 withDate:strDate]] Renewal:alertRenewal Days:14];
+        [self addNotificationByDate:[self.notificationDateFormatter dateFromString:[self getPreviousDate:-30 withDate:strDate]] Renewal:alertRenewal Days:30];
+    }
+    else
+    {
+        NSLog(@"Notifications not Enabled");
+    }
+}
+
+- (BOOL)isEnableNotification{
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(currentUserNotificationSettings)]){ // Check it's iOS 8 and above
+        UIUserNotificationSettings *grantedSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
+        if (grantedSettings.types == UIUserNotificationTypeNone) {
+            return NO;
+        }
+        else if (grantedSettings.types & UIUserNotificationTypeSound & UIUserNotificationTypeAlert ){
+            return YES;
+        }
+        else if (grantedSettings.types  & UIUserNotificationTypeAlert){
+            return YES;
+        }
+    }
+    else{
+        UIRemoteNotificationType types = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
+        if (types == UIRemoteNotificationTypeNone)
+        {
+            return NO;
+        }
+        else
+        {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 - (void)deleteNotification:(NSDictionary *)alertRenewal{
