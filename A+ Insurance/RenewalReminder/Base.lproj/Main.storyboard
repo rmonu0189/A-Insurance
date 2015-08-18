@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ePN-mV-8Xn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ePN-mV-8Xn">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -219,7 +219,7 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="home_background" translatesAutoresizingMaskIntoConstraints="NO" id="V6b-6i-80y">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inD-FX-dVT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inD-FX-dVT">
                                 <rect key="frame" x="47" y="304" width="227" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="wru-cT-L9T"/>
@@ -231,7 +231,7 @@
                                     <action selector="clickedSendMyPassword:" destination="Uz4-1o-578" eventType="touchUpInside" id="cO2-vf-K7R"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B8R-IB-paV">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8R-IB-paV">
                                 <rect key="frame" x="47" y="245" width="227" height="40"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="mail_box" translatesAutoresizingMaskIntoConstraints="NO" id="IM7-dw-E8w">
@@ -269,7 +269,7 @@
                                     <action selector="clickedBackLogin:" destination="Uz4-1o-578" eventType="touchUpInside" id="MPi-Hu-4l9"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="home_app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="HyX-33-Tkh">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="home_app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="HyX-33-Tkh">
                                 <rect key="frame" x="106" y="154" width="108" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="108" id="0m5-yq-cHM"/>
@@ -291,7 +291,7 @@
                             <constraint firstAttribute="trailing" secondItem="B8R-IB-paV" secondAttribute="trailing" constant="46" id="alr-DK-xju"/>
                             <constraint firstAttribute="trailing" secondItem="fVj-Ou-4nF" secondAttribute="trailing" constant="93" id="e61-U9-Zu1"/>
                             <constraint firstItem="B8R-IB-paV" firstAttribute="top" secondItem="HyX-33-Tkh" secondAttribute="bottom" constant="17" id="fgv-eZ-P2u"/>
-                            <constraint firstItem="HyX-33-Tkh" firstAttribute="top" secondItem="KLU-py-SI7" secondAttribute="bottom" constant="154" id="vyg-IR-Wom"/>
+                            <constraint firstItem="HyX-33-Tkh" firstAttribute="top" secondItem="KLU-py-SI7" secondAttribute="bottom" constant="134" id="vyg-IR-Wom"/>
                             <constraint firstItem="V6b-6i-80y" firstAttribute="leading" secondItem="5g9-et-uVe" secondAttribute="leading" id="w0n-dt-cOm"/>
                             <constraint firstAttribute="centerX" secondItem="HyX-33-Tkh" secondAttribute="centerX" id="wWc-gs-WIa"/>
                         </constraints>
@@ -603,7 +603,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wS-7A-qeY">
-                                <rect key="frame" x="0.0" y="108" width="320" height="200"/>
+                                <rect key="frame" x="0.0" y="88" width="320" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RENEWAL DUE IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkH-wD-kab">
                                         <rect key="frame" x="8" y="17" width="304" height="21"/>
@@ -678,7 +678,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kn9-Wv-qqc">
-                                <rect key="frame" x="0.0" y="308" width="320" height="260"/>
+                                <rect key="frame" x="0.0" y="288" width="320" height="280"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqQ-fL-qSP">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
@@ -885,7 +885,7 @@
                             <constraint firstItem="0cA-bL-jJe" firstAttribute="top" secondItem="sqY-d5-zG0" secondAttribute="bottom" id="MoA-uP-2Yn"/>
                             <constraint firstItem="oRP-Yj-mzE" firstAttribute="top" secondItem="sgY-4u-QmV" secondAttribute="bottom" constant="8" id="R6j-Vx-xkI"/>
                             <constraint firstItem="kn9-Wv-qqc" firstAttribute="leading" secondItem="emx-MJ-5P5" secondAttribute="leading" id="RyX-H1-maj"/>
-                            <constraint firstItem="3wS-7A-qeY" firstAttribute="top" secondItem="JXh-bZ-Ebf" secondAttribute="bottom" constant="15" id="S8f-pQ-ZKR"/>
+                            <constraint firstItem="3wS-7A-qeY" firstAttribute="top" secondItem="JXh-bZ-Ebf" secondAttribute="bottom" constant="-5" id="S8f-pQ-ZKR"/>
                             <constraint firstItem="sqY-d5-zG0" firstAttribute="top" secondItem="emx-MJ-5P5" secondAttribute="top" id="UVY-CR-5je"/>
                             <constraint firstItem="3wS-7A-qeY" firstAttribute="leading" secondItem="emx-MJ-5P5" secondAttribute="leading" id="VPk-tt-0Dl"/>
                             <constraint firstAttribute="trailing" secondItem="3wS-7A-qeY" secondAttribute="trailing" id="VmK-cp-Yas"/>
@@ -2088,7 +2088,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVw-s8-R4m">
                                 <rect key="frame" x="0.0" y="118" width="320" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 AM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfC-Ch-Jc8">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 am" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfC-Ch-Jc8">
                                         <rect key="frame" x="151" y="9" width="159" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="9iu-4x-oyP"/>
@@ -2480,6 +2480,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="SuA-cO-Kud"/>
         <segue reference="PpA-Ve-u3v"/>
-        <segue reference="hfq-W0-e6M"/>
+        <segue reference="MdD-pw-acI"/>
     </inferredMetricsTieBreakers>
 </document>
