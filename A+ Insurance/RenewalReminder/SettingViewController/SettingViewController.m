@@ -42,7 +42,9 @@
     
     if (strTime.length > 0) {
         self.lblTime.text = strTime;
-        self.datePicker.date = [dateFormatter dateFromString:self.lblTime.text];
+        if ([dateFormatter dateFromString:self.lblTime.text] != nil) {
+            self.datePicker.date = [dateFormatter dateFromString:self.lblTime.text];
+        }
     }
     
     self.btnAlertOnOff.on = [[NSUserDefaults standardUserDefaults] boolForKey:@"alert_switch"];

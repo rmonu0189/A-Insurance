@@ -108,7 +108,6 @@
 		FA12DC911A7678A60038CBDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA12DC901A7678A60038CBDF /* AppDelegate.m */; };
 		FA12DC941A7678A60038CBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA12DC921A7678A60038CBDF /* Main.storyboard */; };
 		FA12DC991A7678A60038CBDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA12DC981A7678A60038CBDF /* Images.xcassets */; };
-		FA12DCA01A7678A70038CBDF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12DC9F1A7678A70038CBDF /* XCTest.framework */; };
 		FA12DCA11A7678A70038CBDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12DC801A7678A60038CBDF /* Foundation.framework */; };
 		FA12DCA21A7678A70038CBDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12DC841A7678A60038CBDF /* UIKit.framework */; };
 		FA12DCAA1A7678A70038CBDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA12DCA81A7678A70038CBDF /* InfoPlist.strings */; };
@@ -525,7 +524,6 @@
 		FA12DC931A7678A60038CBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA12DC981A7678A60038CBDF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA12DC9E1A7678A70038CBDF /* RenewalReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RenewalReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA12DC9F1A7678A70038CBDF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FA12DCA71A7678A70038CBDF /* RenewalReminderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RenewalReminderTests-Info.plist"; sourceTree = "<group>"; };
 		FA12DCA91A7678A70038CBDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA12DCAB1A7678A70038CBDF /* RenewalReminderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenewalReminderTests.m; sourceTree = "<group>"; };
@@ -731,7 +729,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA12DCA01A7678A70038CBDF /* XCTest.framework in Frameworks */,
 				92341D931A7FB92800F38390 /* FacebookSDK.framework in Frameworks */,
 				FA12DCA21A7678A70038CBDF /* UIKit.framework in Frameworks */,
 				FA12DCA11A7678A70038CBDF /* Foundation.framework in Frameworks */,
@@ -813,7 +810,6 @@
 				FA12DC801A7678A60038CBDF /* Foundation.framework */,
 				FA12DC821A7678A60038CBDF /* CoreGraphics.framework */,
 				FA12DC841A7678A60038CBDF /* UIKit.framework */,
-				FA12DC9F1A7678A70038CBDF /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
